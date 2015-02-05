@@ -81,9 +81,11 @@ There was considerable support for some kind of training workshop to
 teach researchers how to share and/or encourage reproducibility in
 their work.  One possibility might be a *data carpentry* workshop in
 neuroscience, similar to the *software carpentry* workshops that teach
-programming skills.  INCF hosts a training workshops, and in his role
+programming skills. INCF hosts a training workshops, and in his role
 as chair of INCF's Training programme, David Willshaw welcomed
-suggestions for new training ideas.
+suggestions for new training ideas. While useful, the "carpentry" 
+courses cannot teach in depth because they last for only one or
+two days. Other solutions are therefore needed. 
 
 ## Developing an online community
 
