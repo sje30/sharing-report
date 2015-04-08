@@ -37,6 +37,7 @@ OSF.io badges for papers.
 2. Jim Bednar (Ipython J Neurosci 2014)
 3. Tim Vogels Science supplementary (2011)
 4. Stephen Eglen (knitr, Gigascience 2014)
+
 Good tools to help with this process include ipython, knitr,
 Makefiles, Docker.
 
