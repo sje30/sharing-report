@@ -1,8 +1,8 @@
 This is a draft outline to send to Nature Neuroscience for comment as
-an editorial type piece.
+an editorial type piece.  Ideally I think it should be quiet short,
+say 1500-2000 words, which may preclud the final section (FAQ).
 
 # Background
-
 
 *  Importance of reproducible research.  Benefits (potential and
 actual).
