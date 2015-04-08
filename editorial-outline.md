@@ -1,6 +1,6 @@
 This is a draft outline to send to Nature Neuroscience for comment as
 an editorial type piece.  Ideally I think it should be quiet short,
-say 1500-2000 words, which may preclud the final section (FAQ).
+say 1500-2000 words, which may preclude the final section (FAQ).
 
 # Background
 
@@ -11,22 +11,21 @@ actual).
 papers rarely give all details needed to reproduce the paper.
 
 * Previous approaches included Biostatistics (kitemarking), and new
-OSF.io badges for papers.
+OSF.io badges for papers, some political science journals...
 
 * Many journals now adopting this ... 
 
 # What we are doing now
 
 * Introducing Code availability review process.  Simple step as part
-  of review to check that there is code there tha meets the current
+  of review to check that there is code there that it meets the current
   Nature policy.
 
-* *NOT* a full review of the code to check that it actuall should
+* *NOT* a full review of the code to check that it actually should
   work, or can be run.  Just simply that is there (although editor may
   comment on quality).
 
 # Recommendations for good practice
-
 
 * Share code upon publication (or earlier).  Suggested places: github,
   OSF.io, deposit models in modelDB and/or Open Source Brain.
@@ -41,18 +40,19 @@ OSF.io badges for papers.
 Good tools to help with this process include ipython, knitr,
 Makefiles, Docker.
 
+* Permanent URLs (eg. DOI, handle) for the final deposit of your software.
 
-* Permanent URLs for software.
+* Include with your code a widely-used permission license such as MIT or BSD
 
-* Don't forget the license.
+* Use a version control system (such as git) to develop the code and include the version control database with the final deposition of the code. 
 
 # Pledge
 
-We will endevaour to lead by example, and follow all these practices
+We will endeavor to lead by example, and follow all these practices
 as part of our future work in all scientific publications.  (Possible
 link to a bigger topic on JB re the "Research Manifesto").
 
-# Frequently asked questions (*pehaps online if too long)
+# Frequently asked questions (*perhaps online if too long)
 
 ## This will take a long time.
 
@@ -61,7 +61,7 @@ months) and others in the lab.
 
 ## I'll need to provide support for my code.
 
-No.
+No. Most of the widely-used software licenses absolve you of this responsibility. 
 
 ## I'll need to document it.
 
@@ -75,13 +75,13 @@ code.
 
 ## I'm afraid someone will find a bug.
 
-They might.  (e.g. J Neuroscience article in 2014).  Get over it.  All
+They might, e.g. J Neuroscience article in 2014.  Get over it.  All
 our code probably has bugs, and although some may fundamentally
 change the results, others may not.
 
 ## I might get scooped 
 
-You might get scooped, but equallyt your group already have an
+You might get scooped, but equally your group already have an
 advantage.  And you should benefit from other people sharing their
 code.
 
@@ -92,7 +92,7 @@ write both papers first, and then publish your code?
 
 ## My algorithm takes a long time to run.
 
-Caching can help.
+Caching and makefiles can help.
 
 ## I need proprietary programs
 
@@ -103,8 +103,17 @@ Just share what you can.
 Whatever you think might be useful to others (including your future
 self).  By sharing as much as you can, you solve the issue of code
 management -- better to have the code on github than on a student's
-laptop where nce the student leaves there is little chance of
+laptop where once the student leaves there is little chance of
 retrieving it.
+
+### Further reading
+
+Nick Barnes, Publish your computer code: it is good enough, Nature 467, 753 (2010), [doi:10.1038/467753a](http://www.nature.com/news/2010/101013/full/467753a.html)
+
+Varsha Khodiyar 2015 Code Sharing – read our tips and share your own. Scientific Data Blog, February 19, 2015. [http://blogs.nature.com/scientificdata/2015/02/19/code-sharing-tips/](http://blogs.nature.com/scientificdata/2015/02/19/code-sharing-tips/)
+
+Leveque, Randall 2012. Top Ten Reasons to Not Share Your Code (and why you should anyway). [http://faculty.washington.edu/rjl/pubs/topten/topten.pdf](http://faculty.washington.edu/rjl/pubs/topten/topten.pdf)
+
 
 
 
