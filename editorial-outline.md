@@ -10,8 +10,7 @@ actual).
 * Point out that computational complexity today means that
 papers rarely give all details needed to reproduce the paper.
 
-* Previous approaches included Biostatistics (kitemarking), and new
-OSF.io badges for papers, some political science journals...
+* Previous approaches included Biostatistics (kitemarking), code reviews at the Quarterly Journal of Political Science, and new OSF.io badges for papers
 
 * Many journals now adopting this ... 
 
@@ -45,6 +44,8 @@ Makefiles, Docker.
 * Include with your code a widely-used permission license such as MIT or BSD
 
 * Use a version control system (such as git) to develop the code and include the version control database with the final deposition of the code. 
+
+* When working code written by others, observe Daniel Kahneman's 'reproducibility etiquette' and have a discussion with the authors of the code to give them a chance to fix bugs or respond to issues you've identified before you make any public statements.
 
 # Pledge
 
