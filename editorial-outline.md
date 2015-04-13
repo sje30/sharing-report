@@ -4,17 +4,23 @@ say 1500-2000 words, which may preclude the final section (FAQ).
 
 # Background
 
-*  Importance of reproducible research.  Benefits (potential and
+*  Importance / _necessity_ of reproducible research.  Rationales and Benefits (potential and
 actual).
+
+* point out that most work involve complex computation 
 
 * Point out that computational complexity today means that
 papers rarely give all details needed to reproduce the paper.
 
-* Previous approaches included Biostatistics (kitemarking), code reviews at the Quarterly Journal of Political Science, and new OSF.io badges for papers
+* Previous approaches included Biostatistics (kitemarking), code reviews at the Quarterly Journal of Political Science, and new OSF.io badges for papers. _is there evidence for sucess of these approaches?__
 
-* Many journals now adopting this ... 
+* Many(?/some) journals now adopting this ... 
 
-# What we are doing now
+* Point out that badges or incentives have childish aspect but in some cases seem to be effective (to the surprise of the authors :). How much damaging this could be in the future if reasearchers try to "optimize" this ?
+
+# Recommendations for good practice
+
+## What we are proposing now
 
 * Introducing Code availability review process.  Simple step as part
   of review to check that there is code there that it meets the current
@@ -24,10 +30,10 @@ papers rarely give all details needed to reproduce the paper.
   work, or can be run.  Just simply that is there (although editor may
   comment on quality).
 
-# Recommendations for good practice
+## Other recommendations
 
-* Share code upon publication (or earlier).  Suggested places: github,
-  OSF.io, deposit models in modelDB and/or Open Source Brain.
+* Share code upon publication (or earlier).  Suggested places: github, 
+  OSF.io, deposit models in modelDB and/or Open Source Brain, bitbucket, githorious, google code, any other. 
 
 * Follow good examples in the literature, including those from:
 
@@ -35,8 +41,9 @@ papers rarely give all details needed to reproduce the paper.
 2. Jim Bednar (Ipython J Neurosci 2014)
 3. Tim Vogels Science supplementary (2011)
 4. Stephen Eglen (knitr, Gigascience 2014)
+5. Michael Waskom (J Neuroscience, 2014)
 
-Good tools to help with this process include ipython, knitr,
+Good tools to help with this process include ipython/Jupyter, knitr,
 Makefiles, Docker.
 
 * Permanent URLs (eg. DOI, handle) for the final deposit of your software.
@@ -115,6 +122,9 @@ Varsha Khodiyar 2015 Code Sharing – read our tips and share your own. Scientif
 
 Leveque, Randall 2012. Top Ten Reasons to Not Share Your Code (and why you should anyway). [http://faculty.washington.edu/rjl/pubs/topten/topten.pdf](http://faculty.washington.edu/rjl/pubs/topten/topten.pdf)
 
+# References
+
+Waskom, M.L., Kumaran, D., Gordon, A.M., Rissman, J., and Wagner, A.D. (2014). Frontoparietal Representations of Task Context Support the Flexible Control of Goal-Directed Cognition. Journal of Neuroscience 34, 10743–10755.
 
 
 
