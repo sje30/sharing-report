@@ -4,19 +4,18 @@ say 1500-2000 words, which may preclude the final section (FAQ).
 
 # Background
 
-*  Importance / _necessity_ of reproducible research.  Rationales and Benefits (potential and
-actual).
+* Importance / _necessity_ of reproducible research.  Rationales and
+Benefits (potential and actual).
 
-* point out that most work involve complex computation 
+* Note most work involve complex computations. 
 
-* Point out that computational complexity today means that
-papers rarely give all details needed to reproduce the paper.
+* Computational complexity today means that papers rarely give all
+details needed to reproduce the paper.
 
-* Previous approaches included Biostatistics (kitemarking), code reviews at the Quarterly Journal of Political Science, and new OSF.io badges for papers. _is there evidence for sucess of these approaches?__
-
-* Many(?/some) journals now adopting this ... 
-
-* Point out that badges or incentives have childish aspect but in some cases seem to be effective (to the surprise of the authors :). How much damaging this could be in the future if reasearchers try to "optimize" this ?
+* Previous approaches included Biostatistics (kitemarking), code
+  reviews at the Quarterly Journal of Political Science, and new
+  OSF.io badges for papers.  Unclear whether badges will have the
+  right effect, but worth exploring.
 
 # Recommendations for good practice
 
@@ -28,17 +27,19 @@ papers rarely give all details needed to reproduce the paper.
 
 * *NOT* a full review of the code to check that it actually should
   work, or can be run.  Just simply that is there (although editor may
-  comment on quality).
+  comment on quality).  Similar to what Nature Biotechnology have just
+  announced.
 
 ## Other recommendations
 
-* Share code upon publication (or earlier).  Suggested places: github, 
-  OSF.io, deposit models in modelDB and/or Open Source Brain, bitbucket, githorious, google code, any other. 
+* Share code upon publication (or earlier).  Suggested places: github,
+  OSF.io, deposit models in modelDB and/or Open Source Brain,
+  bitbucket, githorious, google code, any other.
 
 * Follow good examples in the literature, including those from:
 
-1. Christophe Pouzat (Org mode)
-2. Jim Bednar (Ipython J Neurosci 2014)
+1. Christophe Pouzat (Org mode 2011)
+2. Jim Bednar (Ipython; Frontiers 2013)
 3. Tim Vogels Science supplementary (2011)
 4. Stephen Eglen (knitr, Gigascience 2014)
 5. Michael Waskom (J Neuroscience, 2014)
@@ -50,19 +51,27 @@ Makefiles, Docker.
 
 * Include with your code a widely-used permission license such as MIT or BSD
 
-* Use a version control system (such as git) to develop the code and include the version control database with the final deposition of the code. 
+* Use a version control system (such as git) to develop the code and
+  include the version control database with the final deposition of
+  the code.
 
-* When working code written by others, observe Daniel Kahneman's 'reproducibility etiquette' and have a discussion with the authors of the code to give them a chance to fix bugs or respond to issues you've identified before you make any public statements.
+* When working code written by others, observe Daniel Kahneman's
+  'reproducibility etiquette' and have a discussion with the authors
+  of the code to give them a chance to fix bugs or respond to issues
+  you've identified before you make any public statements.
 
 # Pledge
 
-We will endeavor to lead by example, and follow all these practices
-as part of our future work in all scientific publications.  (Possible
+We will endeavor to lead by example, and follow all these practices as
+part of our future work in all scientific publications.  (Possible
 link to a bigger topic on JB re the "Research Manifesto").
 
-# Frequently asked questions (*perhaps online if too long)
+# Frequently asked questions
 
-## This will take a long time.
+These questions may be interesting but if they make the article too
+long, we could move them onto the web instead.
+
+## Sharing my code will take a long time to prepare.
 
 It might, but you are writing for your future self (e.g. in 6-12
 months) and others in the lab.
@@ -87,7 +96,7 @@ They might, e.g. J Neuroscience article in 2014.  Get over it.  All
 our code probably has bugs, and although some may fundamentally
 change the results, others may not.
 
-## I might get scooped 
+## I might get scooped.
 
 You might get scooped, but equally your group already have an
 advantage.  And you should benefit from other people sharing their
@@ -124,7 +133,24 @@ Leveque, Randall 2012. Top Ten Reasons to Not Share Your Code (and why you shoul
 
 # References
 
-Waskom, M.L., Kumaran, D., Gordon, A.M., Rissman, J., and Wagner, A.D. (2014). Frontoparietal Representations of Task Context Support the Flexible Control of Goal-Directed Cognition. Journal of Neuroscience 34, 10743–10755.
+Delescluse M, Franconville R, Joucla S, Lieury T, Pouzat C (2011)
+Making neurophysiological data analysis reproducible: why and how? J
+Physiol Paris 106:159–170.
 
+Eglen SJ, Weeks M, Jessop M, Simonotto J, Jackson T, Sernagor E (2014)
+A data repository and analysis framework for spontaneous neural
+activity recordings in developing retina. Gigascience 3:3.
 
+Stevens J-LR, Elver M, Bednar JA (2013) An automated and reproducible
+workflow for running and analyzing neural simulations using Lancet and
+IPython Notebook. Front Neuroinform 7:44.
 
+Vogels TP, Sprekeler H, Zenke F, Clopath C, Gerstner W (2011)
+Inhibitory plasticity balances excitation and inhibition in sensory
+pathways and memory networks. Science 334:1569–1573.
+
+Waskom, M.L., Kumaran, D., Gordon, A.M., Rissman, J., and Wagner,
+A.D. (2014). Frontoparietal Representations of Task Context Support
+the Flexible Control of Goal-Directed Cognition. Journal of
+Neuroscience 34, 10743–10755.
+	
