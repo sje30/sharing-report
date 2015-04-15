@@ -28,7 +28,10 @@ details needed to reproduce the paper.
 * *NOT* a full review of the code to check that it actually should
   work, or can be run.  Just simply that is there (although editor may
   comment on quality).  Similar to what Nature Biotechnology have just
-  announced.
+  [announced](http://www.nature.com/nbt/journal/v33/n4/full/nbt.3202.html).
+  See also the
+  [commentary](http://www.nature.com/news/rule-rewrite-aims-to-clean-up-scientific-software-1.17323).
+
 
 ## Other recommendations
 
