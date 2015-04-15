@@ -4,7 +4,7 @@ say 1500-2000 words, which may preclude the final section (FAQ).
 
 # Background
 
-* Importance / _necessity_ of reproducible research.  Rationales and
+* Importance/_necessity_ of reproducible research.  Rationales and
 Benefits (potential and actual).
 
 * Note most work involve complex computations. 
@@ -12,10 +12,9 @@ Benefits (potential and actual).
 * Computational complexity today means that papers rarely give all
 details needed to reproduce the paper.
 
-* Previous approaches included Biostatistics (kitemarking), code
-  reviews at the Quarterly Journal of Political Science, and new
-  OSF.io badges for papers.  Unclear whether badges will have the
-  right effect, but worth exploring.
+* Previous approaches included [kitemarking articles in _Biostatistics_](http://www.oxfordjournals.org/our_journals/biosts/for_authors/msprep_submission.html), [code
+  reviews at the Quarterly Journal of Political Science](http://thepoliticalmethodologist.com/2014/12/09/a-decade-of-replications-lessons-from-the-quarterly-journal-of-political-science/), and new
+  [OSF badges](https://osf.io/tvyxz/) for papers.  Unclear whether badges will have the desired effect, but worth exploring.
 
 # Recommendations for good practice
 
@@ -36,8 +35,7 @@ details needed to reproduce the paper.
 ## Other recommendations
 
 * Share code upon publication (or earlier).  Suggested places: github,
-  OSF.io, deposit models in modelDB and/or Open Source Brain,
-  bitbucket, githorious, google code, any other.
+  osf.io, deposit models in modelDB and/or Open Source Brain, figshare, zenodo, bitbucket, gitorious, google code, any other.
 
 * Follow good examples in the literature, including those from:
 
@@ -52,16 +50,14 @@ Makefiles, Docker.
 
 * Permanent URLs (eg. DOI, handle) for the final deposit of your software.
 
-* Include with your code a widely-used permission license such as MIT or BSD
+* Include with your code a [widely-used permissive license such as MIT or BSD](http://choosealicense.com/)
 
 * Use a version control system (such as git) to develop the code and
   include the version control database with the final deposition of
   the code.
 
-* When working code written by others, observe Daniel Kahneman's
-  'reproducibility etiquette' and have a discussion with the authors
-  of the code to give them a chance to fix bugs or respond to issues
-  you've identified before you make any public statements.
+* When working code with written by others, observe [Daniel Kahneman's
+  'reproducibility etiquette'](http://www.scribd.com/doc/225285909/Kahneman-Commentary) and have a discussion with the authors of the code to give them a chance to fix bugs or respond to issues you've identified before you make any public statements.
 
 # Pledge
 
@@ -97,7 +93,7 @@ code.
 
 They might, e.g. J Neuroscience article in 2014.  Get over it.  All
 our code probably has bugs, and although some may fundamentally
-change the results, others may not.
+change the results, others may not. Incorporating unit and regressions tests into your code development will help minimize bugs. 
 
 ## I might get scooped.
 
@@ -112,11 +108,11 @@ write both papers first, and then publish your code?
 
 ## My algorithm takes a long time to run.
 
-Caching and makefiles can help.
+Caching and makefiles can help during development. Consider including a small sample of your data in your code release so that others can explore your code without long wait times.
 
 ## I need proprietary programs
 
-Just share what you can.
+Just share what you can, and state the names and version numbers o the proprietary programs you used.
 
 ## How much should I share?
 
