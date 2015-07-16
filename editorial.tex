@@ -1,0 +1,222 @@
+\documentclass[11pt]{article}
+
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
+\usepackage{amsmath,mathpazo,graphicx,doi}
+
+\usepackage[a4paper,margin=3cm]{geometry}
+
+\usepackage{xspace}
+\usepackage{setspace}
+
+
+\RequirePackage{lineno} 
+\modulolinenumbers[2]
+
+
+\usepackage[style=nature,articletitle=true,isbn=false]{biblatex}
+\bibliography{editorial}
+\AtEveryBibitem{\clearfield{month}}
+%%\bibliography{gen}
+
+\begin{document}
+
+\doublespacing
+
+\title{Good practice for sharing data and code in Neuroscience}
+
+\author{Stephen J. Eglen$^{1,\dagger}$, your names here, Jean-Baptiste Poline${^\dagger}$}
+\date{\today}
+\maketitle
+
+\noindent $^{1}$ 
+Cambridge Computational Biology Institute\\
+Department of Applied Mathematics and Theoretical Physics\\
+University of Cambridge\\
+Wilberforce Road, Cambridge CB3 0WA, UK
+\vspace*{2mm}
+
+\noindent $^2$ JB address
+
+\vspace*{2mm}
+
+
+\noindent $\dagger$
+Corresponding author.\\
+\noindent Phone: +44 (0) 1223 765761
+\noindent Email: S.J.Eglen@damtp.cam.ac.uk
+
+
+
+\vspace*{2cm}
+\subsection*{Abbreviations}
+\begin{tabular}{ll}
+\end{tabular}
+
+
+\clearpage
+
+
+\renewcommand{\cite}[1]{\autocite{#1}}
+
+\linenumbers
+
+\section*{Background}
+
+Many areas of neuroscience are now critically dependent on
+computational tools to help understand the large volumes of data being
+created.  Furthermore, computer models are increasingly being used to
+help predict and understand the function of the nervous system.  Many
+of these computations are complex, and often cannot be concisely
+reported in the methods section of a scientific article.  In a few
+areas there is some consensus as to software packages for analysis
+(e.g. SPM in neuroimaging).  However, many times computer programs are
+written to solve specific problems.  As authors, how best can we
+maximise the chances that other scientists can reproduce our
+computations?  Is our research reproducible?
+
+To date, the sharing of computer programs underlying neuroscience
+research has been the exception, rather than the rule.  However, there
+are many benefits to sharing these programs, including increased
+understanding and reuse of your work.  Furthermore, open programs can
+be scrutinised and improved, whereas the functioning of closed
+programs remain forever unclear.  Funding agencies, research
+institutes and publishers are all gradually developing policies to
+reduce the witholding of computer programes relating to research
+\cite{Morin2012-65e}.  \textit{For example, in Summer 2015 the Wellcome Trust
+are expected to extend their data sharing policy to include computer
+programs}.  The Nature family of journals have recently
+published opinion pieces in favour of sharing whatever code is
+available, in whatever form \cite{Barnes2010-iv,Ince2012-225}.  More
+recently, since October 2014, all Nature journals require papers to
+include a statement declaring \textit{if} the programs underlying central
+results in a paper are available.
+
+\subsection*{Current position}
+
+To help the editors of \textit{Nature Neuroscience} and
+\textit{Scientific Data} to evaluate if appropriate code is being
+shared, we are now helping to run a one-year trial by adding a small
+extra step to the manuscript review process.  During review, a
+computational expert will be asked to check what code has been
+provided, and to write a brief report commenting on its quality
+according to criteria outlined below (``Simple steps to help you share
+your code'').  There is no expectation that the expert will re-run the
+programs, as often this can take days to recreate the computational
+environment, and computations could take many months to complete.
+\textit{Furthermore, this report will not prevent publication of a
+  manuscript, as the current policy at Nature is not mandatory.}
+
+
+\subsection*{What should be shared?}
+
+Authors may be unclear as to what exactly should be shared.  Ideally,
+you should share as much code and data to allow others to reproduce
+your work.  However, this may not be possible/practical.  However, it
+is expected that authors will share key parts of the work,
+e.g. implementations of any novel algorithms or analysis.  Code to
+implement routine statistical tests would not be seen as so
+important.  However, by getting into the habit of sharing as much as
+possible, not only do you help others who wish to reproduce your work,
+you will be helping other members of your laboratory, or even yourself
+in 6--12 months time.  By sharing your code publicly, you will know
+where to find it in the future, rather than the code disappearing on a
+colleague's laptop when they leave your group.
+
+\subsection*{Simple steps to help you share your code}
+
+Once you have decided \textit{what} you plan to share, here are some simple
+guidelines for \textit{how} to share your work.  Note that in many cases these
+principles should be followed throughout the lifetime of your project,
+not just at the end when you wish to publish your results.
+
+\begin{description}
+\item [Version control] Use a version control system (such as git) to
+  develop the code.  The version control database can then be easily
+  shared with others using sites such as \url{http://github.com}.
+
+\item [Permanent URLS] Generate stable URLs (such as a DOI) for key
+  versions of your software.  This can be done routinely with sites
+  such as \url{http://zenodo.org}.  If your work includes computer
+  models of neural systems, you may wish to consider depositing these
+  models in established repositories such as ModelDB
+  (\url{https://senselab.med.yale.edu/}) or
+  \url{http://opensourcebrain.org}.
+
+
+\item [Licence] Choose a suitable licence for your code so that you
+  can assert how you wish others to reuse your code.  For example, to
+  maximise reuse, you may wish to use a permissive licence such as
+  MIT or BSD.  See
+  \url{http://www.software.ac.uk/resources/guides/adopting-open-source-licence}
+  for a guide to licenses.
+
+\item [Etiquette] When working code written by others, observe Daniel Kahneman's
+  'reproducibility etiquette' and have a discussion with the authors
+  of the code to give them a chance to fix bugs or respond to issues
+  you've identified before you make any public statements.
+
+\item [Documentation] Contrary to popular expectations, you do not
+  need to write extensive documentation or a user's guide for the code
+  still be to useful to others \cite{Barnes2010-iv}.  However, it is
+  worth providing a minimal README file to give an introduction to
+  what the code does, and how to run it.  For example, provide
+  instructions on how to regenerate a key result, or a particular
+  figure from a paper.
+
+\item [Tools and case studies] Consider using modern tools that can
+  help with making your computational research reproducible.  Many of
+  these tools have already been used in Neuroscience and serve as good
+  examples to follow, for example Org mode \cite{Delescluse2011},
+  IPython \cite{Stevens2013} and Knitr \cite{Eglen2014}.  Other
+  prominent examples of reproducible research in Computational
+  Neuroscience include \cite{Vogels2011-c8c,Waskom2014-gd}.
+  Virtualisation environments, such as Docker, can also be used to
+  encapsulate or preserve all of the computational environment so that
+  other users can run your code.  \textit{I am writing a review that
+    currently includes notes on Docker, but it is still in review?
+    Ben: have a good alternative?  perhaps one of your papers}
+  
+
+\end{description}
+
+\subsection*{Further reading}
+
+Varsha Khodiyar 2015 Code Sharing – read our tips and share your own. Scientific Data Blog, February 19, 2015. \url{http://blogs.nature.com/scientificdata/2015/02/19/code-sharing-tips/}
+
+Leveque, Randall 2012. Top Ten Reasons to Not Share Your Code (and why
+you should anyway). 
+\url{http://faculty.washington.edu/rjl/pubs/topten/topten.pdf}
+
+\textit{Should we point to an online forum where people can ask
+  questions to a community to get help with issues surrounding code
+  sharing?  What would be a good one?  Or should we create a
+  github.com organisation and allow people to post questions as
+  ``issues''?}
+
+\subsection*{Closing remarks}
+
+We will endeavor to lead by example, and follow all these practices as
+part of our future work in all scientific publications.  (Possible
+link to a bigger topic on JB re the "Research Manifesto").
+\textbf{JB: want to expand at all on this point?}
+
+\subsection*{Acknowledgements}
+
+This article is based upon discussions from a workshop to encourage
+sharing in neuroscience, held in Cambridge, December 2014.  It was
+financially supported and organised by the International
+Neuroinformatics Coordinating Facility (\url{http://www.incf.org}),
+with additional support from the Software Sustainability institute
+(\url{http://www.software.ac.uk}).
+
+
+
+\printbibliography
+
+
+
+\end{document}
+
+%% LocalWords: PIPP RGC RGCs Voronoi Paik Ringach Hore Eglen autocorrelogram
+%% LocalWords: correlational Ringach's Autocorrelograms
+
