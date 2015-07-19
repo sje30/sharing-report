@@ -73,13 +73,13 @@ created.  Furthermore, computer models are increasingly being used to
 help predict and understand the function of the nervous system.  Many
 of these computations are complex, and often cannot be concisely
 reported in the methods section of a scientific article.  In a few
-areas there is some consensus as to software packages for analysis
-(e.g. SPM in neuroimaging).  However, we often write new computer programs to solve specific problems in the course of our research.  As authors, how best can we
+areas there is a short list of the software packages mostly used for analysis
+(e.g. SPM, FLS, Afni, Freesurfer in neuroimaging).  However, we often write new computer programs to solve specific problems in the course of our research.  As authors, how best can we
 maximise the chances that other scientists can reproduce our
 computations or reuse our methods on their data?  Is our research reproducible?
 
 To date, the sharing of computer programs underlying neuroscience
-research has been the exception, rather than the rule.  However, there
+research has been the exception (see below for some examples), rather than the rule.  However, there
 are many benefits to sharing these programs, including increased
 understanding and reuse of your work.  Furthermore, open source programs can be scrutinised and improved, whereas the functioning of closed source
 programs remain forever unclear \cite{Vihinen2015}.  Funding agencies, research institutes and publishers are all gradually developing policies to
@@ -110,8 +110,8 @@ Furthermore, this report will not prevent publication of a manuscript, as the cu
 
 It may not be obvious what to share, especially for complex projects with many collaborators.  Ideally,
 you should share as much code and data to allow others to reproduce
-your work.  However, this may not be possible/practical.  However, it
-is expected that you will share key parts of the work, e.g. implementations of novel algorithms or analysis.  By getting into the habit of sharing as much as possible, not only do you help others who wish to reproduce your work, you will be helping other members of your laboratory, or even yourself in the future.  By sharing your code publicly, you are more likely to write higher-quality code \cite{Easterbrook2014}, and you will know where to find it after you've moved on from the project, rather than the code disappearing on a colleague's laptop when they leave your group.
+your work,  but this may not be possible/practical.  However, it
+is expected that you will share key parts of the work, e.g. implementations of novel algorithms or analysis.  By getting into the habit of sharing as much as possible, not only do you help others who wish to reproduce your work, you will be helping other members of your laboratory, or even yourself in the future.  By sharing your code publicly, you are more likely to write higher-quality code \cite{Easterbrook2014}, and you will know where to find it after you've moved on from the project, rather than the code disappearing on a colleague's laptop when they leave your group. In addition, as advocated by Claerbout and Donoho, for computational sciences the scholarship is not the article, the "scholarship is the complete software [...]" \cite{claerbout_electronic_1992, donoho_invitation_2010}.
 
 \subsection*{Simple steps to help you share your code}
 
@@ -123,7 +123,7 @@ not just at the end when you wish to publish your results. Guidelines similar to
 \begin{description}
 \item [Version control] Use a version control system (such as Git) to
   develop the code.  The version control database can then be easily and freely
-  shared with others using sites such as \url{http://github.com} \cite{Ram2013}.
+  shared with others using sites such as \url{http://github.com} \cite{Ram2013} or \url{https://bitbucket.org}.
 
 \item [Persistent URLs] Generate stable URLs (such as a DOI) for key
   versions of your software.  This can be done freely and routinely with sites
@@ -131,11 +131,11 @@ not just at the end when you wish to publish your results. Guidelines similar to
   models of neural systems, you may wish to consider depositing these
   models in established repositories such as ModelDB
   (\url{https://senselab.med.yale.edu/}) or
-  \url{http://opensourcebrain.org}.
+  \url{http://opensourcebrain.org} or NITRC \cite{poline_software_2014}.
 
 \item [License] Choose a suitable license for your code to assert how you wish others to reuse your code  For example, to maximise reuse, you may wish to use a permissive license such as MIT or BSD \cite{Stodden2009}.  Licenses are also important to protect you from others misusing your code. See  \url{http://www.software.ac.uk/resources/guides/adopting-open-source-licence}  for a guide to licenses.
 
-\item [Etiquette] When working code written by others, observe Daniel Kahneman's \cite{Kahneman2014} 'reproducibility etiquette' and have a discussion with the authors of the code to give them a chance to fix bugs or respond to issues you've identified before you make any public statements.
+\item [Etiquette] When working code written by others, observe Daniel Kahneman's \cite{Kahneman2014} 'reproducibility etiquette' and have a discussion with the authors of the code to give them a chance to fix bugs or respond to issues you have identified before you make any public statements. 
 
 \item [Documentation] Contrary to popular expectations, you do not
   need to write extensive documentation or a user's guide for the code
@@ -143,12 +143,12 @@ not just at the end when you wish to publish your results. Guidelines similar to
   worth providing a minimal README file to give an introduction to
   what the code does, and how to run it.  For example, you should provide
   instructions on how to regenerate a key result, or a particular
-  figure from a paper. Literate programming methods, where code and narrative text are interwoven in the same document, make documentation semi-automatic and can save a lot of time when preparing code to accompany a publication \cite{schulte2012multi, gentleman2012statistical}. 
+  figure from a paper. Literate programming methods, where code and narrative text are interwoven in the same document, make documentation semi-automatic and can save a lot of time when preparing code to accompany a publication \cite{schulte2012multi, gentleman2012statistical}. In any cases, well documented code allows for easier re-use and checking.
 
 \item [Tools and case studies] Consider using modern, widely used software tools that can help with making your computational research reproducible.  Many of
   these tools have already been used in Neuroscience and serve as good
   examples to follow, for example Org mode \cite{Delescluse2011},
-  IPython \cite{Stevens2013} and Knitr \cite{Eglen2014}.  Other
+  IPython/Jupyter \cite{Stevens2013} and Knitr \cite{Eglen2014}.  Other
   prominent examples of reproducible research in Computational
   Neuroscience include Vogels et al. \cite{Vogels2011-c8c} and Waskom et al. \cite{Waskom2014-gd}.
   Virtualisation environments, such as Docker, can also be used to
@@ -189,8 +189,8 @@ more robustly and transparently the reliability of our results, we can more easi
  and efficient expression of our analysis than the text of the methods section in our paper. 
 
 However, exhortations such as this editorial are only a small part of making 
-code sharing a normal part of doing Neuroscience. Other efforts might include: training your 
-students and postdocs in sound coding principles so that they are not anxious to share their code, 
+code sharing a normal part of doing Neuroscience. Other efforts might include: training  
+students,  postdocs and researchers in sound coding principles so that they are not anxious to share their code, 
 publishing research that includes code in an open repository, requesting code and data when reviewing, 
 submitting to and reviewing for journals that support code sharing, critically reviewing  grant proposals
  for mentions of code availability, and recognising efforts toward openness in hiring, promotion, 
@@ -198,9 +198,12 @@ submitting to and reviewing for journals that support code sharing, critically r
  will increase the visibility of research accompanied by open source code, and demonstrate to 
  others in the discipline that code sharing is a desirable activity that helps move the field forward. 
 
+We believe that the sociological aspects of code sharing may be harder to overcome than the technical ones.
+Currently, academic success is strongly linked to publications but hardly to the code produced. Code may also be seen as providing a competitive advantage to researchers rather than be a part of the products which should be by default shared by largely publicly funded research. We are therefore advocating for a more global culture change embracing transparency, reproducibility and re-usability of research products.   
 
-  (Possible link to a bigger topic on JB re the "Research Manifesto").
-\textbf{JB: want to expand at all on this point?}
+% (Possible link to a bigger topic on JB re the "Research Manifesto").
+% \textbf{JB: want to expand at all on this point?}
+% I have added a little paragraph, please modify as suited and let me know if you want me to expand more on this. 
 
 \subsection*{Acknowledgements}
 
@@ -210,7 +213,6 @@ financially supported and organised by the International
 Neuroinformatics Coordinating Facility (\url{http://www.incf.org}),
 with additional support from the Software Sustainability institute
 (\url{http://www.software.ac.uk}).
-
 
 
 \printbibliography
