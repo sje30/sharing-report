@@ -12,7 +12,6 @@
 \RequirePackage{lineno} 
 \modulolinenumbers[2]
 
-%% I had to alter the line below a little to get the citations to work - BM
 \usepackage[style=nature,articletitle=true,isbn=false,backend=bibtex]{biblatex}
 \bibliography{editorial}
 \AtEveryBibitem{\clearfield{month}}
@@ -73,10 +72,14 @@ created.  Furthermore, computer models are increasingly being used to
 help predict and understand the function of the nervous system.  Many
 of these computations are complex, and often cannot be concisely
 reported in the methods section of a scientific article.  In a few
-areas there is a short list of the software packages mostly used for analysis
-(e.g. SPM, FLS, Afni, Freesurfer in neuroimaging).  However, we often write new computer programs to solve specific problems in the course of our research.  As authors, how best can we
-maximise the chances that other scientists can reproduce our
-computations or reuse our methods on their data?  Is our research reproducible?
+areas there is a short list of the software packages mostly used for
+analysis (e.g. SPM, FLS, Afni, Freesurfer in neuroimaging).  However,
+we often write new computer programs to solve specific problems in the
+course of our research.  Some of these programs may be relatively
+small scripts that helps analyse all of our data, and these rarely get
+described in papers.  As authors, how best can we maximise the chances
+that other scientists can reproduce our computations or reuse our
+methods on their data?  Is our research reproducible?
 
 To date, the sharing of computer programs underlying neuroscience
 research has been the exception (see below for some examples), rather than the rule.  However, there
@@ -200,10 +203,6 @@ submitting to and reviewing for journals that support code sharing, critically r
 
 We believe that the sociological aspects of code sharing may be harder to overcome than the technical ones.
 Currently, academic success is strongly linked to publications but hardly to the code produced. Code may also be seen as providing a competitive advantage to researchers rather than be a part of the products which should be by default shared by largely publicly funded research. We are therefore advocating for a more global culture change embracing transparency, reproducibility and re-usability of research products.   
-
-% (Possible link to a bigger topic on JB re the "Research Manifesto").
-% \textbf{JB: want to expand at all on this point?}
-% I have added a little paragraph, please modify as suited and let me know if you want me to expand more on this. 
 
 \subsection*{Acknowledgements}
 
