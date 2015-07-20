@@ -22,7 +22,7 @@
 
 \title{Towards standard practices for sharing computer code and programs in Neuroscience}
 
-\author{Stephen J. Eglen$^{1,\dagger}$, Ben Marwick${^2}$, your names here, Jean-Baptiste Poline${^3}$}
+\author{Stephen J. Eglen$^{1,\dagger}$, Ben Marwick${^2}$, Yaroslav O. Halchenko${^3}$, your names here, Jean-Baptiste Poline${^4}$}
 \date{\today}
 \maketitle
 
@@ -39,7 +39,13 @@ University of Washington\\
 Seattle, WA 98195-3100 USA 
 \vspace*{2mm}
 
-\noindent $^3$ JB address
+\noindent $^{3}$
+Department of Psychological and Brain Sciences\\
+Dartmouth College\\
+Hanover, NH 03755 USA
+\vspace*{2mm}
+
+\noindent $^4$ JB address
 
 \vspace*{2mm}
 
@@ -73,10 +79,10 @@ help predict and understand the function of the nervous system.  Many
 of these computations are complex, and often cannot be concisely
 reported in the methods section of a scientific article.  In a few
 areas there is a short list of the software packages mostly used for
-analysis (e.g. SPM, FLS, Afni, Freesurfer in neuroimaging).  However,
+analysis (e.g., SPM, FSL, AFNI, FreeSurfer in neuroimaging).  However,
 we often write new computer programs to solve specific problems in the
 course of our research.  Some of these programs may be relatively
-small scripts that helps analyse all of our data, and these rarely get
+small scripts that help analyse all of our data, and these rarely get
 described in papers.  As authors, how best can we maximise the chances
 that other scientists can reproduce our computations or reuse our
 methods on their data?  Is our research reproducible?
@@ -86,13 +92,14 @@ research has been the exception (see below for some examples), rather than the r
 are many benefits to sharing these programs, including increased
 understanding and reuse of your work.  Furthermore, open source programs can be scrutinised and improved, whereas the functioning of closed source
 programs remain forever unclear \cite{Vihinen2015}.  Funding agencies, research institutes and publishers are all gradually developing policies to
-reduce the withholding of computer programes relating to research
+reduce the withholding of computer programs relating to research
 \cite{Morin2012-65e}.  The Nature family of journals have recently
 published opinion pieces in favour of sharing whatever code is
 available, in whatever form \cite{Barnes2010-iv,Ince2012-225}.  More
 recently, since October 2014, all Nature journals require papers to
 include a statement declaring \textit{if} the programs underlying central
 results in a paper are available. In April 2015 \textit{Nature Biotechnology} offered recommendations for providing code with papers and began asking referees to give feedback on their ability to test code that accompanies submitted manuscripts \cite{NatBiotech2015}.
+In July 2015 F1000Research stated that ``Software papers describing non-open software, code and/or web tools will be rejected'' (\url{http://f1000research.com/channels/f1000-faculty-reviews/for-authors/article-guidelines/software-tool-articles}).
 
 \subsection*{Current position}
 
@@ -115,6 +122,7 @@ It may not be obvious what to share, especially for complex projects with many c
 you should share as much code and data to allow others to reproduce
 your work,  but this may not be possible/practical.  However, it
 is expected that you will share key parts of the work, e.g. implementations of novel algorithms or analysis.  By getting into the habit of sharing as much as possible, not only do you help others who wish to reproduce your work, you will be helping other members of your laboratory, or even yourself in the future.  By sharing your code publicly, you are more likely to write higher-quality code \cite{Easterbrook2014}, and you will know where to find it after you've moved on from the project, rather than the code disappearing on a colleague's laptop when they leave your group. In addition, as advocated by Claerbout and Donoho, for computational sciences the scholarship is not the article, the "scholarship is the complete software [...]" \cite{claerbout_electronic_1992,donoho_invitation_2010}.
+% TODO: possibly inject idea from {Halchenko2015} that sharing your code openly guarantees availability of it to yourself later on happen you change employer
 
 \subsection*{Simple steps to help you share your code}
 
@@ -150,6 +158,7 @@ not just at the end when you wish to publish your results. Guidelines similar to
   models in established repositories such as ModelDB
   (\url{https://senselab.med.yale.edu/}) or
   \url{http://opensourcebrain.org} or NITRC \cite{poline_software_2014}.
+% TODO: there is also https://www.force11.org/group/resource-identification-initiative now which is piloted/supported by a few publishers
 
 \item [License] Choose a suitable license for your code to assert how
   you wish others to reuse your code  For example, to maximise reuse,
@@ -180,7 +189,7 @@ not just at the end when you wish to publish your results. Guidelines similar to
   encapsulate or preserve all of the computational environment so that
   other users can run your code with having to install numerous dependencies \cite{Boettiger2015}.
 
-\item [Include some tests] Testing the code has long been recognized
+\item [Include some tests] Testing the code has long been recognised
   as a critical step in software industry but the practice is not
   widely adopted yet by researchers. We recommend including tests that
   demonstrate the code is producing the correct
@@ -202,6 +211,8 @@ Stodden, V. \& Miguez, S., 2014. Best Practices for Computational Science: Softw
 
 Stodden, V., Leisch, F., \& Peng R. (Eds.). (2014). Implementing Reproducible Research. CRC press, Chapman and Hall. \cite{victoria_stodden_implementing_2014}
 
+Halchenko, Y. O. and Hanke, M. (2015). Four aspects to make science open ``by design'' and not as an after-thought. GigaScience, 4. DOI: 10.1186/s13742-015-0072-7 \cite{Halchenko2015}
+
 Several online forums are available for discussing issues related to
 this article.  One popular forum is
 \url{http://academia.stackexchange.com/questions/tagged/reproducible-research}.
@@ -219,7 +230,7 @@ the personal costs of the time and effort required to share code \cite{stodden20
 The community benefits, in our view, are obvious and substantial: we can demonstrate 
 more robustly and transparently the reliability of our results, we can more easily adapt
  methods developed by others to our data, and the impact of our work increases as others 
- can similarly reuse our methods on their data. Thus, we will endeavor to lead 
+ can similarly reuse our methods on their data. Thus, we will endeavour to lead 
  by example, and follow all these practices as part of our future work in all scientific publications. 
  Even if the code we produce today will not run ten years from now, it will still be a more precise 
  and efficient expression of our analysis than the text of the methods section in our paper. 
@@ -255,3 +266,10 @@ with additional support from the Software Sustainability institute
 
 
 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-PDF-mode: t
+%%% TeX-master: t
+%%% ispell-local-dictionary: "british"
+%%% auto-fill-inhibit-regexp: ".*[&|].*[&|].*"
+%%% End:
