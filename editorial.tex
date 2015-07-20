@@ -114,7 +114,7 @@ Furthermore, this report will not prevent publication of a manuscript, as the cu
 It may not be obvious what to share, especially for complex projects with many collaborators.  Ideally,
 you should share as much code and data to allow others to reproduce
 your work,  but this may not be possible/practical.  However, it
-is expected that you will share key parts of the work, e.g. implementations of novel algorithms or analysis.  By getting into the habit of sharing as much as possible, not only do you help others who wish to reproduce your work, you will be helping other members of your laboratory, or even yourself in the future.  By sharing your code publicly, you are more likely to write higher-quality code \cite{Easterbrook2014}, and you will know where to find it after you've moved on from the project, rather than the code disappearing on a colleague's laptop when they leave your group. In addition, as advocated by Claerbout and Donoho, for computational sciences the scholarship is not the article, the "scholarship is the complete software [...]" \cite{claerbout_electronic_1992, donoho_invitation_2010}.
+is expected that you will share key parts of the work, e.g. implementations of novel algorithms or analysis.  By getting into the habit of sharing as much as possible, not only do you help others who wish to reproduce your work, you will be helping other members of your laboratory, or even yourself in the future.  By sharing your code publicly, you are more likely to write higher-quality code \cite{Easterbrook2014}, and you will know where to find it after you've moved on from the project, rather than the code disappearing on a colleague's laptop when they leave your group. In addition, as advocated by Claerbout and Donoho, for computational sciences the scholarship is not the article, the "scholarship is the complete software [...]" \cite{claerbout_electronic_1992,donoho_invitation_2010}.
 
 \subsection*{Simple steps to help you share your code}
 
@@ -157,7 +157,8 @@ not just at the end when you wish to publish your results. Guidelines similar to
   Virtualisation environments, such as Docker, can also be used to
   encapsulate or preserve all of the computational environment so that
   other users can run your code with having to install numerous dependencies \cite{Boettiger2015}.
-  
+
+\item [Include some tests] Testing the code has long been recognized as a critical step in software industry but the practice is not widely adopted yet for research code. We recommend to include tests demonstrating that the code is indeed producing the correct results. These tests can be thought at a low level (testing each individual function, called unit testing) or at higher level (e.g. testing that the program yields correct answers on simulated data) \cite{wilson_best_2014}. 
 
 \end{description}
 
@@ -170,6 +171,7 @@ Leveque, Randall 2012. Top Ten Reasons to Not Share Your Code (and why you shoul
 
 Stodden, V. \& Miguez, S., 2014. Best Practices for Computational Science: Software Infrastructure and Environments for Reproducible and Extensible Research. Journal of Open Research Software. 2(1), p.e21. DOI: \url{http://doi.org/10.5334/jors.ay}
 
+Stodden, V., Leisch, F., \& Peng R. (Eds.). (2014). Implementing Reproducible Research. CRC press, Chapman and Hall. \cite{victoria_stodden_implementing_2014}
 
 \textit{Should we point to an online forum where people can ask
   questions to a community to get help with issues surrounding code
