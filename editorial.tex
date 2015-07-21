@@ -129,8 +129,7 @@ Furthermore, this report will not prevent publication of a manuscript, as the cu
 It may not be obvious what to share, especially for complex projects with many collaborators.  Ideally,
 you should share as much code and data to allow others to reproduce
 your work,  but this may not be possible/practical.  However, it
-is expected that you will share key parts of the work, e.g. implementations of novel algorithms or analysis.  By getting into the habit of sharing as much as possible, not only do you help others who wish to reproduce your work, you will be helping other members of your laboratory, or even yourself in the future.  By sharing your code publicly, you are more likely to write higher-quality code \cite{Easterbrook2014}, and you will know where to find it after you've moved on from the project, rather than the code disappearing on a colleague's laptop when they leave your group. In addition, as advocated by Claerbout and Donoho, for computational sciences the scholarship is not the article, the "scholarship is the complete software [...]" \cite{claerbout_electronic_1992,donoho_invitation_2010}.
-% TODO: possibly inject idea from {Halchenko2015} that sharing your code openly guarantees availability of it to yourself later on happen you change employer
+is expected that you will share key parts of the work, e.g. implementations of novel algorithms or analysis.  By getting into the habit of sharing as much as possible, not only do you help others who wish to reproduce your work, you will be helping other members of your laboratory, or even yourself in the future.  By sharing your code publicly, you are more likely to write higher-quality code \cite{Easterbrook2014}, and you will know where to find it after you've moved on from the project \cite{Halchenko2015}, rather than the code disappearing on a colleague's laptop when they leave your group. In addition, as advocated by Claerbout and Donoho, for computational sciences the scholarship is not the article, the "scholarship is the complete software [...]" \cite{claerbout_electronic_1992,donoho_invitation_2010}.
 
 \subsection*{Simple steps to help you share your code}
 
@@ -148,25 +147,11 @@ not just at the end when you wish to publish your results. Guidelines similar to
   over private versus public access to your code.  This means that you
   can keep your code repository private during its development, and
   then publicly share the repository at a later stage e.g. at the time
-  of publication.
-  
-  \textit{One wrinkle: this private vs public repo setup does not
-    solve the problem of how to share your private repo with anonymous
-    reviewers pre publication -- do we want to recommend a solution --
-    just submit a .zip file? Another solution is to create a new user
-    on github, e.g. ``sharingreport-editor'', with access to the
-    project, and send the password and username to the editor during
-    the review process.  My solution so far has been to make the repo
-    public when paper is submitted for review.}
+  of publication. It also makes it easy for others to contribute to your code, and to adapt it for their own uses. 
 
 \item [Persistent URLs] Generate stable URLs (such as a DOI) for key
-  versions of your software.  This can be done freely and routinely with sites
-  such as \url{http://zenodo.org}.  If your work includes computer
-  models of neural systems, you may wish to consider depositing these
-  models in established repositories such as ModelDB
-  (\url{https://senselab.med.yale.edu/}) or
-  \url{http://opensourcebrain.org} or NITRC \cite{poline_software_2014}.
-% TODO: there is also https://www.force11.org/group/resource-identification-initiative now which is piloted/supported by a few publishers
+  versions of your software.  Unique identifiers are a key element in demonstrating the integrity and reproducibiltiy of research \cite{vasilevsky2013reproducibility}. For code, these can be obtained freely and routinely with sites such as \url{http://zenodo.org} and \url{http://figshare.com}.  If your work includes computer models of neural systems, you may wish to consider depositing these models in established repositories such as ModelDB (\url{https://senselab.med.yale.edu/}) or \url{http://opensourcebrain.org} or NITRC \cite{poline_software_2014}. Some of these sites allow for private sharing of repositories with anonymous peer reviewers.
+
 
 \item [License] Choose a suitable license for your code to assert how
   you wish others to reuse your code  For example, to maximise reuse,
@@ -209,53 +194,39 @@ not just at the end when you wish to publish your results. Guidelines similar to
 
 \end{description}
 
-\subsection*{Further reading}
+\subsection*{Further reading (note to editor: please make this a box feature)}
 
-Varsha Khodiyar 2015 Code Sharing – read our tips and share your own. Scientific Data Blog, February 19, 2015. \url{http://blogs.nature.com/scientificdata/2015/02/19/code-sharing-tips/}
+Varsha Khodiyar 2015 Code Sharing - read our tips and share your own. Scientific Data Blog, February 19, 2015. \url{http://blogs.nature.com/scientificdata/2015/02/19/code-sharing-tips/}
 
-Leveque, Randall 2012. Top Ten Reasons to Not Share Your Code (and why you should anyway). 
-\url{http://faculty.washington.edu/rjl/pubs/topten/topten.pdf}
+Leveque, Randall 2012. Top Ten Reasons to Not Share Your Code (and why you should anyway). \url{http://faculty.washington.edu/rjl/pubs/topten/topten.pdf}
 
 Stodden, V. \& Miguez, S., 2014. Best Practices for Computational Science: Software Infrastructure and Environments for Reproducible and Extensible Research. Journal of Open Research Software. 2(1), p.e21. DOI: \url{http://doi.org/10.5334/jors.ay}
 
 Stodden, V., Leisch, F., \& Peng R. (Eds.). (2014). Implementing Reproducible Research. CRC press, Chapman and Hall. \cite{victoria_stodden_implementing_2014}
 
-Halchenko, Y. O. and Hanke, M. (2015). Four aspects to make science open ``by design'' and not as an after-thought. GigaScience, 4. DOI: 10.1186/s13742-015-0072-7 \cite{Halchenko2015}
+Halchenko, Y. O. and Hanke, M. (2015). Four aspects to make science open ``by design'' and not as an after-thought. GigaScience, 4. DOI: \url{http://doi.org/10.1186/s13742-015-0072-7} \cite{Halchenko2015}
 
-Several online forums are available for discussing issues related to
-this article.  One popular forum is
-\url{http://academia.stackexchange.com/questions/tagged/reproducible-research}.
+\subsection*{Online communities discussing code sharing (note to editor: please make this a box feature)}
 
-% maybe mention the new Stackexchange site that is going into Beta
-% July 2015, "Open Science".
+\begin{description}
 
+\item [StackExchange and related projects] StackExchange is a network of free and highly active question-and-answer websites.  Two members of the network are relevant to questions of code sharing: \url{http://stackoverflow.com/} which is dedicated to questions about programming in any language in any context, and \url{http://academia.stackexchange.com/questions/tagged/reproducible-research} which is focused questions relating to reproducible research in academic context. A newer member of the StackExchange group is \url{http://area51.stackexchange.com/proposals/65426/open-science}. A related project is \url{https://neurostars.org/} which is a similar free public Q\&A website focused on Neuroinformatics questions, and with many questions on software packages, etc. 
+
+\item [Scientists for Reproducible Research] This is an international multi-disciplinary email list that discusses a wide range of issues relating to code sharing: \url{https://groups.google.com/forum/#!forum/reproducible-research}
+
+\item [GitHub] GitHub is an online repository for computer code and programs that has a large community of researchers that develop and share their code openly on the site. GitHub is the largest and most active code sharing site (others include BitBucket and GitLab) and has convenient tools for facilitating efficient collaborative coding \cite{tippmann2014my}. If you are using an open source program you may find a community of users and developers active on GitHub, where you can ask questions and report problems.
+
+\end{description}
 
 
 \subsection*{Closing remarks}
 
-Changing the behaviors of Neuroscientists so that they make their code more available 
-will likely be resisted by those who do not see the community benefits as outweighing 
-the personal costs of the time and effort required to share code \cite{stodden2010scientific}. 
-The community benefits, in our view, are obvious and substantial: we can demonstrate 
-more robustly and transparently the reliability of our results, we can more easily adapt
- methods developed by others to our data, and the impact of our work increases as others 
- can similarly reuse our methods on their data. Thus, we will endeavor to lead 
- by example, and follow all these practices as part of our future work in all scientific publications. 
- Even if the code we produce today will not run ten years from now, it will still be a more precise 
- and efficient expression of our analysis than the text of the methods section in our paper. 
+Changing the behaviors of Neuroscientists so that they make their code more available will likely be resisted by those who do not see the community benefits as outweighing the personal costs of the time and effort required to share code \cite{stodden2010scientific}. The community benefits, in our view, are obvious and substantial: we can demonstrate more robustly and transparently the reliability of our results, we can more easily adapt methods developed by others to our data, and the impact of our work increases as others can similarly reuse our methods on their data. Thus, we will endeavor to lead by example, and follow all these practices as part of our future work in all scientific publications. Even if the code we produce today will not run ten years from now, it will still be a more precise and efficient expression of our analysis than the text of the methods section in our paper. 
 
-However, exhortations such as this editorial are only a small part of making 
-code sharing a normal part of doing Neuroscience. Other efforts might include: training  
-students,  postdocs and researchers in sound coding principles so that they are not anxious to share their code, 
-publishing research that includes code in an open repository, requesting code and data when reviewing, 
-submitting to and reviewing for journals that support code sharing, critically reviewing  grant proposals
- for mentions of code availability, and recognizing efforts toward openness in hiring, promotion, 
- and reference letters \cite{leveque2012reproducible}. This combination of efforts on a variety of fronts 
- will increase the visibility of research accompanied by open source code, and demonstrate to 
- others in the discipline that code sharing is a desirable activity that helps move the field forward. 
+However, exhortations such as this editorial are only a small part of making code sharing a normal part of doing Neuroscience. Other efforts might include: training students,  postdocs and researchers in sound coding principles so that they are not anxious to share their code, publishing research that includes code in an open repository, requesting code and data when reviewing, submitting to and reviewing for journals that support code sharing, critically reviewing grant proposals
+ for mentions of code availability, and recognizing efforts toward openness in hiring, promotion, and reference letters \cite{leveque2012reproducible}. This combination of efforts on a variety of fronts will increase the visibility of research accompanied by open source code, and demonstrate to others in the discipline that code sharing is a desirable activity that helps move the field forward. 
 
-We believe that the sociological aspects of code sharing may be harder to overcome than the technical ones.
-Currently, academic success is strongly linked to publications but hardly to the code produced. Code may also be seen as providing a competitive advantage to researchers rather than be a part of the products which should be by default shared by largely publicly funded research. We are therefore advocating for a more global culture change embracing transparency, reproducibility and re-usability of research products.   
+We believe that the sociological barriers to code sharing may be harder to overcome than the technical ones. Currently, academic success is strongly linked to publications and there is little recognition for producing and sharing code. Code may also be seen as providing a private competitive advantage to researchers. We challenge this view and propose that code be regarded as part of the research products which should be shared by default, and that there should be an obligation to share code for those conducting publicly funded research. We are therefore advocating for code sharing as part of a broader culture change embracing transparency, reproducibility and re-usability of research products.   
 
 \subsection*{Acknowledgments}
 
