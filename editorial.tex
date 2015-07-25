@@ -115,7 +115,7 @@ reduce the withholding of computer programs relating to research
 published opinion pieces in favor of sharing whatever code is
 available, in whatever form \cite{Barnes2010-iv,Ince2012-225}.  More
 recently, since October 2014, all Nature journals require papers to
-include a statement declaring \textit{if} the programs underlying central
+include a statement declaring \textit{whether} the programs underlying central
 results in a paper are available. In April 2015 \textit{Nature Biotechnology} offered recommendations for providing code with papers and began asking referees to give feedback on their ability to test code that accompanies submitted manuscripts \cite{NatBiotech2015}.
 In July 2015 F1000Research stated that ``Software papers describing non-open software, code and/or web tools will be rejected'' (\url{http://f1000research.com/channels/f1000-faculty-reviews/for-authors/article-guidelines/software-tool-articles}). Also in July, BioMed Central introduced a minimum standards of reporting checklist for BMC Neuroscience and several other journals, requiring subnmissions to include a code availability statement, and for code to be cited using a DOI or similar unique identifier \cite{Kenall2015}.
 
@@ -139,7 +139,9 @@ extends the scope with concrete feedback on core aspects of long-term reusabilit
 \subsection*{What should be shared?}
 
 It may not be obvious what to share, especially for complex projects with many
-collaborators.  Ideally, you should share as much code and data to allow others to
+collaborators.
+As advocated by Claerbout and Donoho, for computational sciences the scholarship is not the article, the "scholarship is the complete software [...]" \cite{claerbout_electronic_1992,donoho_invitation_2010}.
+So, ideally, you should share as much code and data to allow others to
 reproduce your work,  but this may not be possible/practical.  However, it
 is expected that you will share key parts of the work, e.g. implementations of
 novel algorithms or analysis.  By getting into the habit of sharing as much as
@@ -148,13 +150,12 @@ helping other members of your laboratory, or even yourself in the future.  By
 sharing your code publicly, you are more likely to write higher-quality code
 \cite{Easterbrook2014}, and you will know where to find it after you've moved on
 from the project \cite{Halchenko2015}, rather than the code disappearing on a
-colleague's laptop when they leave your group. In addition, as advocated by
-Claerbout and Donoho, for computational sciences the scholarship is not the article, the "scholarship is the complete software [...]" \cite{claerbout_electronic_1992,donoho_invitation_2010}.
+colleague's laptop when they leave your group.
 
 \subsection*{Simple steps to help you share your code}
 
 Once you have decided \textit{what} you plan to share, here are some simple 
-guidelines for \textit{how} to share your work.  Note that in many cases these
+guidelines for \textit{how} to share your work.  Ideally, these
 principles should be followed throughout the lifetime of your project,
 not just at the end when you wish to publish your results. Guidelines similar to these have been proposed recently in many areas of science \cite{Nosek2015, miguel2014, stodden2012journals}, suggesting that they are part of norms that are emerging across disciplines. In the `further reading' section below we list some specific proposals from other fields that expand on the guidelines we suggest here.  
 
@@ -201,7 +202,7 @@ not just at the end when you wish to publish your results. Guidelines similar to
   Virtualization environments, such as VirtualBox appliances and
   Docker containers, can also be used to
   encapsulate or preserve all of the computational environment so that
-  other users can run your code with having to install numerous dependencies \cite{Boettiger2015}.
+  other users can run your code without having to install numerous dependencies \cite{Boettiger2015}.
 
 \item [Include some tests] Testing the code has long been recognized
   as a critical step in software industry but the practice is not
@@ -247,9 +248,9 @@ Halchenko, Y. O. and Hanke, M. (2015). Four aspects to make science open ``by de
 
 \subsection*{Closing remarks}
 
-Changing the behaviors of Neuroscientists so that they make their code more available will likely be resisted by those who do not see the community benefits as outweighing the personal costs of the time and effort required to share code \cite{stodden2010scientific}. The community benefits, in our view, are obvious and substantial: we can demonstrate more robustly and transparently the reliability of our results, we can more easily adapt methods developed by others to our data, and the impact of our work increases as others can similarly reuse our methods on their data. Thus, we will endeavor to lead by example, and follow all these practices as part of our future work in all scientific publications. Even if the code we produce today will not run ten years from now, it will still be a more precise and efficient expression of our analysis than the text of the methods section in our paper. 
+Changing the behaviors of Neuroscientists so that they make their code more available will likely be resisted by those who do not see the community benefits as outweighing the personal costs of the time and effort required to share code \cite{stodden2010scientific}. The community benefits, in our view, are obvious and substantial: we can demonstrate more robustly and transparently the reliability of our results, we can more easily adapt methods developed by others to our data, and the impact of our work increases as others can similarly reuse our methods on their data. Thus, we will endeavor to lead by example, and follow all these practices as part of our future work in all scientific publications. Even if the code we produce today will not run ten years from now, it will still be a more precise and complete expression of our analysis than the text of the methods section in our paper. 
 
-However, exhortations such as this editorial are only a small part of making code sharing a normal part of doing Neuroscience. Other efforts might include: training students,  postdocs and researchers in sound coding principles so that they are not anxious to share their code, publishing research that includes code in an open repository, requesting code and data when reviewing, submitting to and reviewing for journals that support code sharing, critically reviewing grant proposals
+However, exhortations such as this editorial are only a small part of making code sharing a normal part of doing Neuroscience. Other efforts might include: training students,  postdocs and researchers in sound coding principles so that they are not anxious to share their code (e.g., \url{http://python.g-node.org}), publishing research that includes code in an open repository, requesting code and data when reviewing, submitting to and reviewing for journals that support code sharing, critically reviewing grant proposals
  for mentions of code availability, and recognizing efforts toward openness in hiring, promotion, and reference letters \cite{leveque2012reproducible}. This combination of efforts on a variety of fronts will increase the visibility of research accompanied by open source code, and demonstrate to others in the discipline that code sharing is a desirable activity that helps move the field forward. 
 
 We believe that the sociological barriers to code sharing may be harder to overcome than the technical ones. Currently, academic success is strongly linked to publications and there is little recognition for producing and sharing code. Code may also be seen as providing a private competitive advantage to researchers. We challenge this view and propose that code be regarded as part of the research products which should be shared by default, and that there should be an obligation to share code for those conducting publicly funded research. We are therefore advocating for code sharing as part of a broader culture change embracing transparency, reproducibility and re-usability of research products.   
