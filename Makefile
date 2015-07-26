@@ -14,3 +14,6 @@ editorial-outline.pdf: editorial-outline.md
 
 
 
+.PHONY: clean
+clean:
+	rm -f editorial.pdf $(TOCLEAN)
