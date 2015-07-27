@@ -106,7 +106,7 @@ created.  Furthermore, computer models are increasingly being used to
 help predict and understand the function of the nervous system.  Many
 of these computations are complex, and often cannot be concisely
 reported in the methods section of a scientific article.  In a few
-areas there is a short list of the software packages mostly used for
+areas there are widely used software packages for
 analysis (e.g., SPM, FSL, AFNI, BrainVoyager, FreeSurfer in
 neuroimaging).  However, we often write new computer programs to solve
 specific problems in the course of our research.  Some of these
@@ -128,7 +128,7 @@ available, in whatever form \cite{Barnes2010-iv,Ince2012-225}.  More
 recently, since October 2014, all Nature journals require papers to
 include a statement declaring \textit{whether} the programs underlying central
 results in a paper are available. In April 2015 \textit{Nature Biotechnology} offered recommendations for providing code with papers and began asking referees to give feedback on their ability to test code that accompanies submitted manuscripts \cite{NatBiotech2015}.
-In July 2015 F1000Research stated that ``Software papers describing non-open software, code and/or web tools will be rejected'' (\url{http://f1000research.com/channels/f1000-faculty-reviews/for-authors/article-guidelines/software-tool-articles}). Also in July, BioMed Central introduced a minimum standards of reporting checklist for BMC Neuroscience and several other journals, requiring subnmissions to include a code availability statement, and for code to be cited using a DOI or similar unique identifier \cite{Kenall2015}.
+In July 2015 F1000Research stated that ``Software papers describing non-open software, code and/or web tools will be rejected'' (\url{http://f1000research.com/channels/f1000-faculty-reviews/for-authors/article-guidelines/software-tool-articles}). Also in July, BioMed Central introduced a minimum standards of reporting checklist for BMC Neuroscience and several other journals, requiring submissions to include a code availability statement, and for code to be cited using a DOI or similar unique identifier \cite{Kenall2015}.
 
 \subsection*{Current position}
 
@@ -162,7 +162,8 @@ your work, but this may not be possible or practical.  However, it is
 expected that you will share key parts of the work,
 e.g. implementations of novel algorithms or analysis.  By getting into
 the habit of sharing as much as possible, not only do you help others
-who wish to reproduce your work, you will be helping other members of
+who wish to reproduce your work (which is a basic tenet of the scientific 
+method), you will be helping other members of
 your laboratory, or even yourself in the future.  By sharing your code
 publicly, you are more likely to write higher-quality code
 \cite{Easterbrook2014}, and you will know where to find it after
@@ -193,12 +194,13 @@ not just at the end when you wish to publish your results. Guidelines similar to
 \item [Persistent URLs] Generate stable URLs (such as a DOI) for key
   versions of your software.  Unique identifiers are a key element in
   demonstrating the integrity and reproducibility of research
-  \cite{vasilevsky2013reproducibility}. For code, these can be
+  \cite{vasilevsky2013reproducibility}, and allow referencing of the 
+  exact version of your code used to produce figures. DOIs can be
   obtained freely and routinely with sites such as
   \url{http://zenodo.org} and \url{http://figshare.com}.  If your work
   includes computer models of neural systems, you may wish to consider
   depositing these models in established repositories such as
-  ModelDB\cite{web:modeldb}, Open Source Brain\cite{web:osb}, INCF
+  ModelDB\cite{modeldb}, Open Source Brain\cite{osb}, INCF
   Software Center\cite{web:incf-software} or NITRC
   \cite{poline_software_2014}. Some of these sites allow for private
   sharing of repositories with anonymous peer reviewers. Journal
@@ -209,7 +211,7 @@ not just at the end when you wish to publish your results. Guidelines similar to
 
 
 \item [License] Choose a suitable license for your code to assert how
-  you wish others to reuse your code  For example, to maximize reuse,
+  you wish others to reuse your code.  For example, to maximize reuse,
   you may wish to use a permissive license such as MIT or BSD
   \cite{Stodden2009}.  Licenses are also important to protect you from
   others misusing your code.  Visit \url{http://choosealicense.com/}
@@ -257,7 +259,10 @@ not just at the end when you wish to publish your results. Guidelines similar to
   results\cite{Axelrod2014-xi}. These tests can be at a low level
   (testing each individual function, called unit testing) or at a
   higher level (e.g. testing that the program yields correct answers
-  on simulated data) \cite{wilson_best_2014}.
+  on simulated data) \cite{wilson_best_2014}. Linking tests to continuous 
+  integration services (such as Travis CI, https://travis-ci.org) allows 
+  these tests to be automatically run each time a change is made to the code,
+  ensuring failing tests are immediately flagged and can be dealt with quickly.
 
 \end{description}
 
@@ -311,7 +316,7 @@ However, exhortations such as this editorial are only a small part of
 making code sharing a normal part of doing Neuroscience; many other
 activities are important.  All researchers should be trained in sound
 coding principles; such training is provided by organizations such as
-Software Carpentry \cite{wilson_best_2014} and Neuroinformatics
+Software Carpentry \cite{wilson_best_2014} and through national Neuroinformatics
 nodes, e.g. \url{http://python.g-node.org}.  Furthermore we can
 request code and data when reviewing, and submit to and review for
 journals that support code sharing.  Grant proposals should be checked
