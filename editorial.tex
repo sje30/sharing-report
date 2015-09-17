@@ -178,13 +178,28 @@ with many collaborators.  As advocated by Claerbout and Donoho, for
 computational sciences the scholarship is not the article; the
 "scholarship is the complete software [...]"
 \cite{claerbout_electronic_1992,donoho_invitation_2010}.  So, ideally,
-you should share as much code and data as is needed to allow others to reproduce
-your work, but this may not be possible or practical.  However, it is
-expected that you will share key parts of the work,
-e.g. implementations of novel algorithms or analyses.  By getting into
-the habit of sharing as much as possible, not only do you help others
-who wish to reproduce your work (which is a basic tenet of the scientific 
-method), you will be helping other members of
+you should share as much code and data as is needed to allow others to
+reproduce your work, but this may not be possible or practical.
+However, it is expected that you will share key parts of the work,
+e.g. implementations of novel algorithms or analyses.  \textbf{One
+  approach, required for example for submission of your work to
+  ModelDB\cite{modeldb}, is to share enough code, data and
+  documentation to allow at least one key figure from your manuscript
+  to be reproduced.  By adopting appropriate software tools, as
+  mentioned in the next section, it is now relatively straightforward
+  to share the materials required to regenerate \textit{all} figures
+  and tables.  On the other hand, code that is not novel because it is
+  already available, or that you feel that is unlikely to be of use to
+  others need not be shared.  This includes code that performs simple
+  preprocessing or statistical tests, or code that deals with local
+  computing issues such as hardware and software configurations.
+  Finally, if your work is computationally intensive and requires a
+  long time to run (e.g. many weeks), you may prefer to provide a
+  small example to demonstrate your code.}
+
+By getting into the habit of sharing as much as possible, not only do
+you help others who wish to reproduce your work (which is a basic
+tenet of the scientific method), you will be helping other members of
 your laboratory, or even yourself in the future.  By sharing your code
 publicly, you are more likely to write higher-quality code
 \cite{Easterbrook2014}, and you will know where to find it after
@@ -193,6 +208,7 @@ code disappearing on a colleague's laptop when they leave your group.
 You will be part of a community and benefit from the code shared by
 others, thus contributing to a reduction in software development time
 for yourself and others.
+
 
 \subsection*{Simple steps to help you share your code}
 
@@ -268,7 +284,8 @@ not just at the end when you wish to publish your results. Guidelines similar to
   IPython/Jupyter \cite{Stevens2013} and Knitr \cite{Eglen2014}.  Other
   prominent examples of reproducible research in computational
   neuroscience include Vogels et al. \cite{Vogels2011-c8c} and Waskom
-  et al. \cite{Waskom2014-gd}.  
+  et al. \cite{Waskom2014-gd}; see
+  \url{https://github.com/WagnerLabPapers} for details.
   Virtualization environments, such as VirtualBox appliances and
   Docker containers, can also be used to
   encapsulate or preserve all of the computational environment so that
