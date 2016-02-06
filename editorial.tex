@@ -149,7 +149,9 @@ in July 2015, BioMed Central introduced a minimum standards of
 reporting checklist for BMC Neuroscience and several other journals,
 requiring submissions to include a code availability statement and for
 code to be cited using a DOI or similar unique identifier
-\cite{Kenall2015}.
+\cite{Kenall2015}.  \textbf{We believe that all journals should adopt
+  policies that highly encourage, or even mandate, the sharing of
+  software relating to journal publications.}
 
 \subsection*{What should be shared?}
 
@@ -161,21 +163,22 @@ computational sciences the scholarship is not the article; the
 you should share as much code and data as is needed to allow others to
 reproduce your work, but this may not be possible or practical.
 However, it is expected that you will share key parts of the work,
-e.g. implementations of novel algorithms or analyses.  \textbf{One
-  approach, recommended for example for submission of your work to
-  ModelDB\cite{modeldb}, is to share enough code, data and
-  documentation to allow at least one key figure from your manuscript
-  to be reproduced.  By adopting appropriate software tools, as
-  mentioned in the next section, it is now relatively straightforward
-  to share the materials required to regenerate \textit{all} figures
-  and tables.  On the other hand, code that is not novel because it is
-  already available, or that you feel that is unlikely to be of use to
-  others need not be shared.  This includes code that performs simple
-  preprocessing or statistical tests, or code that deals with local
-  computing issues such as hardware and software configurations.
-  Finally, if your work is computationally intensive and requires a
-  long time to run (e.g. many weeks), you may prefer to provide a
-  small example to demonstrate your code.}
+e.g. implementations of novel algorithms or analyses.  At a minimum,
+we suggest following the recommendation of submission of work to
+ModelDB\cite{modeldb}, i.e. to share enough code, data and
+documentation to allow at least one key figure from your manuscript to
+be reproduced.  However, by adopting appropriate software tools, as
+mentioned in the next section, it is now relatively straightforward to
+share the materials required to regenerate \textit{all} figures and
+tables.  On the other hand, code that is not novel because it is
+already available, or that you feel that is unlikely to be of use to
+others need not be shared.  This includes code that performs simple
+preprocessing or statistical tests, or code that deals with local
+computing issues such as hardware and software configurations.
+Finally, if your work is computationally intensive and requires a long
+time to run (e.g. many weeks), you may prefer to provide a small ``toy''
+example to demonstrate your code.
+
 
 By getting into the habit of sharing as much as possible, not only do
 you help others who wish to reproduce your work (which is a basic
@@ -199,14 +202,15 @@ not just at the end when you wish to publish your results. Guidelines similar to
 
 \begin{description}
 \item [Version control] Use a version control system (such as Git) to
-  develop the code.  The version control database can then be easily
-  and freely shared with others using sites such as
+  develop the code \cite{Blischak2016}.  The version control database
+  can then be easily and freely shared with others using sites such as
   \url{http://github.com} \cite{Ram2013} or
   \url{https://bitbucket.org}.  These sites allow you fine control
   over private versus public access to your code.  This means that you
   can keep your code repository private during its development, and
   then publicly share the repository at a later stage e.g. at the time
-  of publication. It also makes it easy for others to contribute to your code, and to adapt it for their own uses. 
+  of publication. It also makes it easy for others to contribute to
+  your code, and to adapt it for their own uses.
 
 \item [Persistent URLs] Generate stable URLs (such as a DOI) for key
   versions of your software.  Unique identifiers are a key element in
@@ -258,20 +262,34 @@ not just at the end when you wish to publish your results. Guidelines similar to
   to rewrite documentation when rewriting code.  In any cases,
   well-documented code allows for easier re-use and checking.
 
-\item [Tools and case studies] Consider using modern, widely used software tools that can help with making your computational research reproducible.  Many of
-  these tools have already been used in neuroscience and serve as good
-  examples to follow, for example Org mode \cite{Delescluse2011},
-  IPython/Jupyter \cite{Stevens2013} and Knitr \cite{Eglen2014}.  Other
-  prominent examples of reproducible research in computational
-  neuroscience include Vogels et al. \cite{Vogels2011-c8c} and Waskom
-  et al. \cite{Waskom2014-gd}; see
-  \url{https://github.com/WagnerLabPapers} for details.
+\item [Tools and case studies] Consider using modern, widely used
+  software tools that can help with making your computational research
+  reproducible.  Many of these tools have already been used in
+  neuroscience and serve as good examples to follow, for example Org
+  mode \cite{Delescluse2011}, IPython/Jupyter \cite{Stevens2013} and
+  Knitr \cite{Eglen2014}.  Other prominent examples of reproducible
+  research in computational neuroscience include Vogels et
+  al. \cite{Vogels2011-c8c} and Waskom et al. \cite{Waskom2014-gd};
+  see \url{https://github.com/WagnerLabPapers} for details.
   Virtualization environments, such as VirtualBox appliances and
-  Docker containers, can also be used to
-  encapsulate or preserve all of the computational environment so that
-  other users can run your code without having to install numerous
-  dependencies \cite{Boettiger2015}.
+  Docker containers, can also be used to encapsulate or preserve all
+  of the computational environment so that other users can run your
+  code without having to install numerous dependencies
+  \cite{Boettiger2015}.
 
+%% TODO: modeldb example, perhaps my g2c code.
+
+\item [Data] Any experimental data collected alongside the software
+  should also be released.  For small datasets, this could be stored
+  alongside the software, although it may be preferable to store
+  experimental data separately in an appropriate repository.  Both
+  PLOS and Scientific Data maintain useful lists of subject-specific and
+  general repositories for data storage, see
+  \url{http://journals.plos.org/plosbiology/s/data-availability#loc-recommended-repositories} and
+  \url{http://www.nature.com/sdata/data-policies/repositories}.
+  
+
+  
 \item [Standards] Use of community standards where appropriate should
   be encouraged. In computational neuroscience for example, PyNN
   \cite{Davison2009} and NeuroML \cite{CannonEtAl2014} are widely used
