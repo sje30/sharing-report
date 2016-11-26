@@ -1,5 +1,6 @@
 # Possible code reviewers
 
+```
 JB Poline (Berkeley)
 Andrew Davison (CNRS)
 Michael Hanke (Magdeburg)
@@ -8,4 +9,4 @@ Stephen Eglen (Cambridge)
 Padraig Gleeson (UCL)
 Ben Marwick (UW)
 Alexander Morley (Oxford)
-
+```
