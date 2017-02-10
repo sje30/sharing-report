@@ -110,17 +110,21 @@ Many areas of neuroscience are now critically dependent on
 computational tools to help understand the large volumes of data being
 created.  Furthermore, computer models are increasingly being used to
 help predict and understand the function of the nervous system.  Many
-of these computations are complex and often cannot be concisely
+%of these computations are complex and often cannot be concisely
+of these computations are complex and in general cannot be concisely
 reported in the methods section of a scientific article.  In a few
 areas there are widely used software packages for
-analysis (e.g., SPM, FSL, AFNI, BrainVoyager, FreeSurfer in
+% analysis (e.g., SPM, FSL, AFNI, BrainVoyager, FreeSurfer in
+analysis (e.g., SPM, FSL, AFNI, FreeSurfer, Civet in
 neuroimaging) or simulation (e.g. NEURON, NEST, Brian).
-However, we often write new computer programs to solve
+% However, we often write new computer programs to solve
+However, most often we write new computer programs to solve
 specific problems in the course of our research.  Some of these
 programs may be relatively small scripts that help analyze all of our
 data, and these rarely get described in papers.  As authors, how best
 can we maximize the chances that other scientists can reproduce our
-computations or reuse our methods on their data?  Is our research
+% computations or reuse our methods on their data?  Is our research
+computations, find errors, or reuse our methods on their data?  Is our research
 reproducible \cite{web:naturefocus}?
 
 To date, the sharing of computer programs underlying neuroscience
@@ -151,7 +155,10 @@ requiring submissions to include a code availability statement and for
 code to be cited using a DOI or similar unique identifier
 \cite{Kenall2015}.  \textbf{We believe that all journals should adopt
   policies that highly encourage, or even mandate, the sharing of
-  software relating to journal publications.}
+%  software relating to journal publications.}
+software relating to journal publications} as this is the only practical 
+way to check the validity of the work. 
+
 
 \subsection*{What should be shared?}
 
@@ -160,45 +167,63 @@ with many collaborators.  As advocated by Claerbout and Donoho, for
 computational sciences the scholarship is not the article; the
 "scholarship is the complete software [...]"
 \cite{claerbout_electronic_1992,donoho_invitation_2010}.  So, ideally,
-you should share as much code and data as is needed to allow others to
-reproduce your work, but this may not be possible or practical.
-However, it is expected that you will share key parts of the work,
+% you should share as much code and data as is needed to allow others to
+we should share all code and data needed to allow others to
+reproduce our work, but this may not be possible or practical.
+% However, it is expected that you will share key parts of the work,
+However, it is expected that the key parts of the work should be shared ,
 e.g. implementations of novel algorithms or analyses.  At a minimum,
 we suggest following the recommendation of submission of work to
 ModelDB\cite{modeldb}, i.e. to share enough code, data and
-documentation to allow at least one key figure from your manuscript to
+% documentation to allow at least one key figure from your manuscript to
+documentation to allow at least key figures from your manuscript to
 be reproduced.  However, by adopting appropriate software tools, as
 mentioned in the next section, it is now relatively straightforward to
 share the materials required to regenerate \textit{all} figures and
-tables.  On the other hand, code that is not novel because it is
-already available, or that you feel that is unlikely to be of use to
-others need not be shared.  This includes code that performs simple
+tables.  
+% On the other hand, code that is not novel because it is
+% already available, or that you feel that is unlikely to be of use to
+% others need not be shared.  
+Code that already exist, is well tested and documented, and is reused 
+in the analysis should be cited. Ideally, all other code should be 
+communicated, 
+% This includes code that performs simple
+including code that performs simple
 preprocessing or statistical tests, or code that deals with local
-computing issues such as hardware and software configurations.
-Finally, if your work is computationally intensive and requires a long
-time to run (e.g. many weeks), you may prefer to provide a small ``toy''
-example to demonstrate your code.
+computing issues such as hardware and software configurations. 
+While this code may not be reusable, it will help others understand how
+analyses are performed, find potential mistakes, and reproducibility. 
 
+%  Finally, if your work is computationally intensive and requires a long
+Finally, if the work is computationally intensive and requires a long
+% time to run (e.g. many weeks), you may prefer to provide a small ``toy''
+time to run (e.g. many weeks), one may prefer to provide a small ``toy''
+% example to demonstrate your code.
+example to demonstrate the code.
 
+% ---jb: below I move the "you" to "we" 
 By getting into the habit of sharing as much as possible, not only do
-you help others who wish to reproduce your work (which is a basic
-tenet of the scientific method), you will be helping other members of
-your laboratory, or even yourself in the future.  By sharing your code
-publicly, you are more likely to write higher-quality code
-\cite{Easterbrook2014}, and you will know where to find it after
-you've moved on from the project \cite{Halchenko2015}, rather than the
+% you help others who wish to reproduce your work (which is a basic
+we help others who wish to reproduce our work (which is a basic
+tenet of the scientific method), we will be helping other members of
+our laboratory, or even ourselves in the future.  By sharing our code
+publicly, we are more likely to write higher-quality code
+\cite{Easterbrook2014}, and we will know where to find it after
+we have moved on from the project \cite{Halchenko2015}, rather than the
 code disappearing on a colleague's laptop when they leave your group.
-You will be part of a community and benefit from the code shared by
+We aslo would be part of a community and benefit from the code shared by
 others, thus contributing to a reduction in software development time
-for yourself and others.
+for ourselves and others.
 
 
-\subsection*{Simple steps to help you share your code}
+%\subsection*{Simple steps to help you share your code}
+\subsection*{Simple steps to help you share the code}
 
-Once you have decided \textit{what} you plan to share, here are some simple 
-guidelines for \textit{how} to share your work.  Ideally, these
-principles should be followed throughout the lifetime of your project,
-not just at the end when you wish to publish your results. Guidelines similar to these have been proposed recently in many areas of science \cite{Nosek2015, miguel2014, stodden2012journals}, suggesting that they are part of norms that are emerging across disciplines. In the `further reading' section below, we list some specific proposals from other fields that expand on the guidelines we suggest here.  
+% you <- we in following paragraph
+Once we have decided \textit{what} to share, here are some simple 
+guidelines for \textit{how} to share the work.  Ideally, these
+principles should be followed throughout the lifetime of the research project,
+not just at the end when we wish to publish our results. Guidelines similar to these have been proposed recently in many areas of science \cite{Nosek2015, miguel2014, stodden2012journals}, suggesting that they are part of norms that are emerging across disciplines. In the `further reading' section below, we list some specific proposals from other fields that expand on the guidelines we suggest here.  
 
 \begin{description}
 \item [Version control] Use a version control system (such as Git) to
@@ -209,7 +234,9 @@ not just at the end when you wish to publish your results. Guidelines similar to
   over private versus public access to your code.  This means that you
   can keep your code repository private during its development, and
   then publicly share the repository at a later stage e.g. at the time
-  of publication. It also makes it easy for others to contribute to
+  %of publication. It also makes it easy for others to contribute to
+  of publication, although we recommend opening the code from the start of the project. 
+  It also makes it easy for others to contribute to
   your code, and to adapt it for their own uses.
 
 \item [Persistent URLs] Generate stable URLs (such as a DOI) for key
@@ -252,7 +279,8 @@ not just at the end when you wish to publish your results. Guidelines similar to
   still be to useful to others \cite{Barnes2010-iv}.  However, it is
   worth providing a minimal README file to give an introduction to
   what the code does, and how to run it.  For example, you should
-  provide instructions on how to regenerate a key result, or a
+  % provide instructions on how to regenerate a key result, or a
+  provide instructions on how to regenerate key results, or a
   particular figure from a paper. Literate programming methods, where
   code and narrative text are interwoven in the same document, make
   documentation semi-automatic and can save a lot of time when
@@ -289,7 +317,8 @@ not just at the end when you wish to publish your results. Guidelines similar to
 
 
 \item [Data] Any experimental data collected alongside the software
-  should also be released.  For small datasets, this could be stored
+% should also be released.  For small datasets, this could be stored
+  should also be released or made available.  For small datasets, this could be stored
   alongside the software, although it may be preferable to store
   experimental data separately in an appropriate repository.  Both
   PLOS and Scientific Data maintain useful lists of subject-specific and
@@ -303,7 +332,7 @@ not just at the end when you wish to publish your results. Guidelines similar to
   be encouraged. In computational neuroscience for example, PyNN
   \cite{Davison2009} and NeuroML \cite{CannonEtAl2014} are widely used
   formats for making models more accessible and portable across
-  multiple simulators.
+  multiple simulators. 
 
 \item [Tests] Testing the code has long been recognized
   as a critical step in software industry but the practice is not
@@ -373,13 +402,15 @@ However, exhortations such as this editorial are only a small part of
 making code sharing a normal part of doing neuroscience; many other
 activities are important.  All researchers should be trained in sound
 coding principles; such training is provided by organizations such as
-Software Carpentry \cite{wilson_best_2014} and through national neuroinformatics
+% Software Carpentry \cite{wilson_best_2014} and through national neuroinformatics
+Software Carpentry \cite{wilson_best_2014} or Data Carpentry and through national neuroinformatics
 nodes, e.g. \url{http://python.g-node.org}.  Furthermore, we should
 request code and data when reviewing, and submit to and review for
 journals that support code sharing.  Grant proposals should be checked
 for mentions of code availability, and we should encourage efforts
 toward openness in hiring, promotion, and reference letters
-\cite{leveque2012reproducible}. Funding agencies and publishers should
+% \cite{leveque2012reproducible}. Funding agencies and publishers should
+\cite{leveque2012reproducible}. Funding agencies and editors should
 also consider mandating code sharing by default.  This combination of
 efforts on a variety of fronts will increase the visibility of
 research accompanied by open source code, and demonstrate to others in
@@ -392,7 +423,8 @@ strongly linked to publications and there is little recognition for
 producing and sharing code. Code may also be seen as providing a
 private competitive advantage to researchers. We challenge this view
 and propose that code be regarded as part of the research products
-which should be shared by default, and that there should be an
+% which should be shared by default, and that there should be an
+and part of the publication in which should be shared by default, and that there should be an
 obligation to share code for those conducting publicly funded
 research. We hope our code availability review will help establish
 such sharing as the norm.  Moreover, we are advocating for code
