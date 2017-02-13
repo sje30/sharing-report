@@ -16,6 +16,13 @@
 \usepackage[style=nature,articletitle=true,isbn=false,backend=bibtex]{biblatex}
 \bibliography{editorial}
 \AtEveryBibitem{\clearfield{month}}
+%% Following bibtex hack overcomes  an error that came in recently to
+%% biblatex in 2017.
+%%http://tex.stackexchange.com/questions/311426/bibliography-error-use-of-blxbblverbaddi-doesnt-match-its-definition-ve
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+
 
 \begin{document}
 
