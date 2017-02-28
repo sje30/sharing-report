@@ -28,23 +28,30 @@
 
 \onehalfspacing
 
+%% PNG taken from https://orcid.org/sites/default/files/images/orcid_128x128.png
+\newcommand{\orcid}[1]{\textsuperscript{\href{https://orcid.org/#1}
+  {\includegraphics[width=2.5mm]{orcid_128x128.png}}}}
+
 \title{Towards standard practices for sharing computer code and programs in neuroscience}
 
-\author{Stephen J. Eglen$^{1,\dagger}$, Ben Marwick${^2}$, Yaroslav
-  O. Halchenko${^3}$, Michael~Hanke${^{4,5}}$,
+\author{\orcid{0000-0001-8607-8025}Stephen J. Eglen$^{1,\dagger}$, 
+  \orcid{0000-0001-7879-4531}Ben Marwick${^2}$, 
+  \orcid{0000-0003-3456-2493}Yaroslav O. Halchenko${^3}$, 
+  \orcid{0000-0001-6398-6370}Michael~Hanke${^{4,5}}$,
   \\
-  Shoaib Sufi$^6$,
-  Padraig Gleeson$^7$, R. Angus Silver$^7$,
-  Andrew P. Davison$^8$,
+  \orcid{0000-0001-6390-2616}Shoaib Sufi$^6$,
+  \orcid{0000-0001-5963-8576}Padraig Gleeson$^7$, 
+  \orcid{0000-0002-5480-6638}R. Angus Silver$^7$,
+  \orcid{0000-0002-4793-7541}Andrew P. Davison$^8$,
   \\
-  Linda Lanyon$^9$,
-  Mathew Abrams$^9$,
-  Thomas Wachtler$^{10}$,
+  \orcid{0000-0002-0885-1825}Linda Lanyon$^9$,
+  \orcid{0000-0001-9438-9691}Mathew Abrams$^9$,
+  \orcid{0000-0003-2015-6590}Thomas Wachtler$^{10}$,
   \\
-  David J. Willshaw$^{11}$,
-  Christophe Pouzat$^{12}$,
+  \orcid{0000-0003-3814-7529}David J. Willshaw$^{11}$,
+  \orcid{0000-0002-2844-8099}Christophe Pouzat$^{12}$,
   %\\
-  Jean-Baptiste Poline$^{13,\dagger}$}
+  \orcid{0000-0002-9794-749X}Jean-Baptiste Poline$^{13,\dagger}$}
 \date{\today}
 \maketitle
 
@@ -185,23 +192,21 @@ preprocessing or statistical tests, or code that deals with local
 computing issues such as hardware and software configurations. 
 While this code may not be reusable, it will help others understand how
 analyses are performed, find potential mistakes, and aid reproducibility. 
-
 Finally, if the work is computationally intensive and requires a long
 time to run (e.g. many weeks), one may prefer to provide a small ``toy''
 example to demonstrate the code.
 
 By getting into the habit of sharing as much as possible, not only do
-we help others who wish to reproduce our work (which is a basic
-tenet of the scientific method), we will be helping other members of
-our laboratory, or even ourselves in the future.  By sharing our code
+we help others who wish to reproduce our work (which is a basic tenet
+of the scientific method), we will be helping other members of our
+laboratory, or even ourselves in the future.  By sharing our code
 publicly, we are more likely to write higher-quality code
-\cite{Easterbrook2014}, and we will know where to find it after
-we have moved on from the project \cite{Halchenko2015}, rather than the
-code disappearing on a colleague's laptop when they leave your group, or 
-suffer some misfortune \cite{Berg2016}.
-We also will be part of a community and benefit from the code shared by
-others, thus contributing to a reduction in software development time
-for ourselves and others.
+\cite{Easterbrook2014}, and we will know where to find it after we
+have moved on from the project \cite{Halchenko2015}, rather than the
+code disappearing on a colleague's laptop when they leave your group,
+or suffer some misfortune \cite{Berg2016}.  We also will be part of a
+community and benefit from the code shared by others, thus reducing
+software development time for ourselves and others.
 
 \subsection*{Simple steps to help you share code}
 
@@ -266,11 +271,11 @@ suggest here.
 \item [Documentation] Contrary to popular expectations, you do not
   need to write extensive documentation or a user's guide for the code
   to still be useful to others \cite{Barnes2010-iv}.  However, it is
-  worth providing a minimal README file to give an introduction to
-  what the code does, and how to run it.  For example, you should
-  provide instructions on how to regenerate key results, or a
-  particular figure from a paper. Literate programming methods, where
-  code and narrative text are interwoven in the same document, make
+  worth providing a minimal README file to describe what the code
+  does, and how to run it.  For example, you should provide
+  instructions on how to regenerate key results, or a particular
+  figure from a paper. Literate programming methods, where code and
+  narrative text are interwoven in the same document, make
   documentation semi-automatic and can save a lot of time when
   preparing code to accompany a publication \cite{schulte2012multi,
     gentleman2012statistical}. However, these methods admittedly take
@@ -335,7 +340,7 @@ suggest here.
   on simulated data) \cite{wilson_best_2014}. With public data available,
   it is often straightforward to have a test verifying that published
   results can be recomputed. Linking tests to continuous 
-  integration services (such as Travis CI, https://travis-ci.org) allows 
+  integration services (such as Travis CI, \url{https://travis-ci.org}) allows 
   these tests to be automatically run each time a change is made to the code,
   ensuring failing tests are immediately flagged and can be dealt with quickly.
 
