@@ -24,7 +24,6 @@
 \def\blx@maxline{77}
 \makeatother
 
-
 \begin{document}
 
 \onehalfspacing
@@ -35,78 +34,78 @@
 
 \title{Towards standard practices for sharing computer code and programs in neuroscience}
 
-\author{\orcid{0000-0001-8607-8025}Stephen J. Eglen$^{1,\dagger}$, 
-  \orcid{0000-0001-7879-4531}Ben Marwick${^2}$, 
-  \orcid{0000-0003-3456-2493}Yaroslav O. Halchenko${^3}$, 
-  \orcid{0000-0001-6398-6370}Michael~Hanke${^{4,5}}$,
+\author{\orcid{0000-0001-8607-8025}Stephen J. Eglen\textsuperscript{1,$\dagger$}, 
+  \orcid{0000-0001-7879-4531}Ben Marwick\textsuperscript{2}, 
+  \orcid{0000-0003-3456-2493}Yaroslav O. Halchenko\textsuperscript{3}, 
+  \orcid{0000-0001-6398-6370}Michael~Hanke\textsuperscript{4,5},
   \\
-  \orcid{0000-0001-6390-2616}Shoaib Sufi$^6$,
-  \orcid{0000-0001-5963-8576}Padraig Gleeson$^7$, 
-  \orcid{0000-0002-5480-6638}R. Angus Silver$^7$,
-  \orcid{0000-0002-4793-7541}Andrew P. Davison$^8$,
+  \orcid{0000-0001-6390-2616}Shoaib Sufi\textsuperscript{6},
+  \orcid{0000-0001-5963-8576}Padraig Gleeson\textsuperscript{7}, 
+  \orcid{0000-0002-5480-6638}R. Angus Silver\textsuperscript{7},
+  \orcid{0000-0002-4793-7541}Andrew P. Davison\textsuperscript{8},
   \\
-  \orcid{0000-0002-0885-1825}Linda Lanyon$^9$,
-  \orcid{0000-0001-9438-9691}Mathew Abrams$^9$,
-  \orcid{0000-0003-2015-6590}Thomas Wachtler$^{10}$,
+  \orcid{0000-0002-0885-1825}Linda Lanyon\textsuperscript{9},
+  \orcid{0000-0001-9438-9691}Mathew Abrams\textsuperscript{9},
+  \orcid{0000-0003-2015-6590}Thomas Wachtler\textsuperscript{10},
   \\
-  \orcid{0000-0003-3814-7529}David J. Willshaw$^{11}$,
-  \orcid{0000-0002-2844-8099}Christophe Pouzat$^{12}$,
+  \orcid{0000-0003-3814-7529}David J. Willshaw\textsuperscript{11},
+  \orcid{0000-0002-2844-8099}Christophe Pouzat\textsuperscript{12},
   %\\
-  \orcid{0000-0002-9794-749X}Jean-Baptiste Poline$^{13,\dagger}$}
+  \orcid{0000-0002-9794-749X}Jean-Baptiste Poline\textsuperscript{13,$\dagger$}}
 \date{\today}
 \maketitle
 
-\noindent $^{1}$ 
+\noindent \textsuperscript{1}
 Cambridge Computational Biology Institute,
 Department of Applied Mathematics and Theoretical Physics,
 University of Cambridge, UK
-%%Wilberforce Road, Cambridge CB3 0WA, UK
 
-\noindent $^{2}$ 
+\noindent \textsuperscript{2}
 Department of Anthropology,
 University of Washington,
 Seattle, WA 98195-3100 USA 
 
-\noindent $^{3}$
+\noindent \textsuperscript{3}
 Department of Psychological and Brain Sciences,
 Dartmouth College,
 Hanover, NH 03755 USA
 
-\noindent $^{4}$
+\noindent \textsuperscript{4}
 Institute of Psychology II, Otto-von-Guericke-University Magdeburg, 39106 Magdeburg, Germany
 
-\noindent $^{5}$
+\noindent \textsuperscript{5}
 Center for Behavioral Brain Sciences, 39106 Magdeburg, Germany
 
-\noindent $^{6}$
+\noindent \textsuperscript{6}
 Software Sustainability Institute, University of Manchester, UK
 
-\noindent $^{7}$
+\noindent \textsuperscript{7}
 Department of Neuroscience, Physiology and Pharmacology, 
 University College London, UK
 
 
-\noindent $^{8}$
+\noindent \textsuperscript{8}
 Unit\'{e} de Neurosciences, Information et Complexit\'{e}, CNRS, Gif sur Yvette, France
 
 
-\noindent $^{9}$
+\noindent \textsuperscript{9}
 International Neuroinformatics Coordinating Facility, 
 Karolinska Institutet, Stockholm, Sweden
 
-\noindent $^{10}$
+\noindent \textsuperscript{10}
 Department of Biology II, Ludwig-Maximilians-Universit\"{a}t
 M\"{u}nchen, Germany
 
-\noindent $^{11}$
+\noindent \textsuperscript{11}
 Institute for Adaptive and Neural Computation, 
 School of Informatics, University of Edinburgh, UK
 
 
-\noindent $^{12}$ MAP5 Paris-Descartes University and CNRS UMR 8145, 
-45 rue des Saints-P\`{e}res, 75006 Paris, France
+\noindent \textsuperscript{12} MAP5 Paris-Descartes University and CNRS UMR 8145, 
+%%45 rue des Saints-P\`{e}res, 
+75006 Paris, France
 
-\noindent $^{13}$  Henry H. Wheeler, Jr. Brain Imaging Center, Helen Wills Neuroscience Institute, University of California, Berkeley, USA
+\noindent \textsuperscript{13}  Henry H. Wheeler, Jr. Brain Imaging Center, Helen Wills Neuroscience Institute, University of California, Berkeley, USA
 
 \vspace*{2mm}
 \noindent $\dagger$
@@ -114,17 +113,19 @@ Corresponding authors: \url{S.J.Eglen@damtp.cam.ac.uk}, \url{jbpoline@gmail.com}
 
 \clearpage
 
-\begin{abstract}
+
+
+\renewcommand{\cite}[1]{\autocite{#1}}
+
+%%\linenumbers
+
+\section*{Summary}
   Computational techniques are central in many areas of neuroscience,
   and are relatively easy to share.  This paper describes why computer
   programs underlying scientific publications should be shared, and
   lists simple steps for sharing.  Together with ongoing efforts in
   data sharing, this should aid reproducibility of research.
-\end{abstract}
 
-\renewcommand{\cite}[1]{\autocite{#1}}
-
-%%\linenumbers
 
 \section*{Background}
 
@@ -433,6 +434,8 @@ None.
 
 
 \clearpage
+
+\setlength{\parskip}{3mm}
 
 \subsection*{Box 1: Further reading}
 
