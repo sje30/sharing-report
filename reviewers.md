@@ -9,4 +9,5 @@ Stephen Eglen (Cambridge)
 Padraig Gleeson (UCL)
 Ben Marwick (UW)
 Alexander Morley (Oxford)
+Roman Bauer (Newcastle)
 ```
