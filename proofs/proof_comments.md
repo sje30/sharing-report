@@ -63,3 +63,8 @@ Edits in final paragraph are okay.
 provide a DOI.]
 
 TODO
+
+
+# General
+
+All URLs, except the PLOS one, resolve okay.
