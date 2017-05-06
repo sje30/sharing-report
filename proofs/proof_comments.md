@@ -23,3 +23,33 @@ NEST - NEural Simulation Tool
 
 # Ref9/10
 [AU: Please clarify which reference the quotation is from.]
+
+TODO
+
+# Box 2
+
+[AU: Box 2 is not cited in the text. Please add a citation after the citation of Box 1.]
+
+TODO
+
+# TOP
+
+[AU: Definition correct as added? Or spell out TOP.] 
+
+correct.
+
+
+# Closing paragraph
+
+Edits in final paragraph are okay.
+
+# Acknowledements
+
+"Cambridge, UK" was location of workshop.
+
+# Reference 23
+
+[AU: Please check this reference and confirm it is correct. If possible,
+provide a DOI.]
+
+TODO
