@@ -38,6 +38,16 @@ TODO
 
 correct.
 
+# Data URLs
+[AU: URL correct as edited?]
+The https://www.nature.com/sdata/policies/repositories is ok.
+However, the preceding URL for PLOS, does not resolve:
+
+http://journals.plos.org/plosbiology/s/data-availability%23loc-recommended-repositories
+
+changing %23 to # (which should not matter) makes the URL okay:
+
+http://journals.plos.org/plosbiology/s/data-availability#loc-recommended-repositories
 
 # Closing paragraph
 
