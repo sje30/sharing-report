@@ -76,9 +76,8 @@ Edits in final paragraph are okay.
 [AU: Please check this reference and confirm it is correct. If possible,
 provide a DOI.]
 
-The reference is correct, but there is no DOI.  After looking, we
-think the following might be a better reference for [23] and does have
-a DOI:
+The reference is correct, but there is no DOI.  We think the following
+might be a better reference for [23] and does have a DOI:
 
     Stodden, V. Computing in Science & Engineering 11, no. 1: 35-40  (2009). 
     http://dx.doi.org/10.1109/MCSE.2009.19
