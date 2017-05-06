@@ -62,6 +62,11 @@ Edits in final paragraph are okay.
 [AU: Please check this reference and confirm it is correct. If possible,
 provide a DOI.]
 
+The reference is correct.  I cannot find a DOI for it, but the
+following is a URL to the author's copy:
+
+http://web.stanford.edu/~vcs/papers/ijclp-STODDEN-2009.pdf
+
 TODO
 
 
