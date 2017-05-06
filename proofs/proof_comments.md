@@ -1,11 +1,11 @@
-# orcids
+# ORCIDs
 
 [AU: While we have added ORCIDs for all authors as requested, we would
 be grateful if authors Marwick, Halchenko, Hanke, Sufi, Abrams,
 Wachtler, Willshaw and Pouzal could also link their ORCIDs to our
 manuscript tracking system (MTS) for future reference.]
 
-TODO.
+We will ask our authors to do this.
 
 # Acronyms
 
@@ -16,41 +16,35 @@ Brian is correct.
 
 The acronyms are as follows:
 
-SPM - Statistical Parametric Mapping
-FSL - FMRIB Software Library (where FMRIB = Oxford Centre for Functional Magnetic Resonance Imaging of the Brain!)
-AFNI - Analysis of Functional NeuroImages
-NEST - NEural Simulation Tool
+
+SPM: Statistical Parametric Mapping
+
+FSL: FMRIB Software Library (where FMRIB = Oxford Centre for
+Functional Magnetic Resonance Imaging of the Brain!)
+
+AFNI: Analysis of Functional NeuroImages
+NEST: NEural Simulation Tool
+
+NEURON is not an acronym.
 
 # Ref 9/10
 [AU: Please clarify which reference the quotation is from.]
 
-TODO
-http://library.seg.org/doi/pdf/10.1190/1.1822162 is reference 9
-
-
-Reference 10 has the following text:
-
-Recall Claerbout’s claim “an article about a computational result is
-advertising, not scholarship. The actual scholarship is the full
-software environment, code and data, that produced the result.” Those
-who are sticklers for linguistic accuracy will  nd that “scholarship”
-is not really appropriate in this quotation. A better choice would
-have been “knowledge.” Computational reproducibility is the means by
-which the published “knowledge” becomes really available to a
-widespread audience.
-
-So perhaps we should change the sentence to:
+Please can we change the sentence to clarify the attribution to read:
 
     As advocated by Claerbout[ref 9] and Donoho[ref 10], for
     computational sciences the scholarship is not the article; the
     "scholarship is the full software environment, code and data, that
-    produced the result."[10]
+    produced the result."[ref 10]
 
 # Box 2
 
 [AU: Box 2 is not cited in the text. Please add a citation after the citation of Box 1.]
 
-TODO
+Add the following text at the location of this query:
+
+    Box 2 describes several online communities for discussing issues
+    around code sharing.
 
 # TOP
 
@@ -82,12 +76,13 @@ Edits in final paragraph are okay.
 [AU: Please check this reference and confirm it is correct. If possible,
 provide a DOI.]
 
-The reference is correct.  I cannot find a DOI for it, but the
-following is a URL to the author's copy:
+The reference is correct, but there is no DOI.  After looking, we
+think the following might be a better reference for [23] and does have
+a DOI:
 
-http://web.stanford.edu/~vcs/papers/ijclp-STODDEN-2009.pdf
+    Stodden, V. Computing in Science & Engineering 11, no. 1: 35-40  (2009). 
+    http://dx.doi.org/10.1109/MCSE.2009.19
 
-TODO
 
 
 # General
