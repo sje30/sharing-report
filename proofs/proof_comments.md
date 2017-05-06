@@ -21,10 +21,30 @@ FSL - FMRIB Software Library (where FMRIB = Oxford Centre for Functional Magneti
 AFNI - Analysis of Functional NeuroImages
 NEST - NEural Simulation Tool
 
-# Ref9/10
+# Ref 9/10
 [AU: Please clarify which reference the quotation is from.]
 
 TODO
+http://library.seg.org/doi/pdf/10.1190/1.1822162 is reference 9
+
+
+Reference 10 has the following text:
+
+Recall Claerbout’s claim “an article about a computational result is
+advertising, not scholarship. The actual scholarship is the full
+software environment, code and data, that produced the result.” Those
+who are sticklers for linguistic accuracy will  nd that “scholarship”
+is not really appropriate in this quotation. A better choice would
+have been “knowledge.” Computational reproducibility is the means by
+which the published “knowledge” becomes really available to a
+widespread audience.
+
+So perhaps we should change the sentence to:
+
+    As advocated by Claerbout[ref 9] and Donoho[ref 10], for
+    computational sciences the scholarship is not the article; the
+    "scholarship is the full software environment, code and data, that
+    produced the result."[10]
 
 # Box 2
 
