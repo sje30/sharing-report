@@ -23,6 +23,7 @@ FSL: FMRIB Software Library (where FMRIB = Oxford Centre for
 Functional Magnetic Resonance Imaging of the Brain!)
 
 AFNI: Analysis of Functional NeuroImages
+
 NEST: NEural Simulation Tool
 
 NEURON is not an acronym.
@@ -55,6 +56,7 @@ correct.
 # Data URLs
 [AU: URL correct as edited?]
 The https://www.nature.com/sdata/policies/repositories is ok.
+
 However, the preceding URL for PLOS, does not resolve:
 
 http://journals.plos.org/plosbiology/s/data-availability%23loc-recommended-repositories
